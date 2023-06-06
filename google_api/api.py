@@ -1,43 +1,34 @@
-# pip install googlemaps
-# pip install prettyprint
-
 import googlemaps
-import pprint
 import time
 import pandas as pd
+import geopy.distance
+from params import *
 
-API_KEY = 'AIzaSyBI4OBAQiNen89euuT-cirsIJwwBebGoS8'
 
-def miles_to_meters(miles):
-    try:
-        return miles/0.00062137
-    except:
-        print('something went wrong')
+API_KEY = GOOGLE_PLACE_API_KEY
+# print(f'GOOGLE_PLACE_API_KEY = {GOOGLE_PLACE_API_KEY}')
 
-city_string = 'Leicester'
+# --- SET VARIABLES ---
+district_string = 'City of Leicester (B)'
 search_type_list = ['hospital', 'train_station', 'bus_station', 'park', 'place_of_worship']
-# search_type_list = ['bus_station']
-radius_miles_from_center = 3
+# search_type_list = ['hospital']
 
-df = pd.read_csv('/Users/nateoppenheimer/code/willbanny/Location-Analysis/raw_data/gb_towns_lat_lon_pop.csv')
+# load district db as df
+df_districts = pd.read_csv('/Users/nateoppenheimer/code/willbanny/Location-Analysis/raw_data/district_coords_clean.csv')
 
-# df
+chosen_district = df_districts[df_districts['District'] == district_string]
+origin_location = (chosen_district.iloc[0]['Centroid_Lat'], chosen_district.iloc[0]['Centroid_Lon'])
+bottom_left = (chosen_district.iloc[0]['BR_Bottom'], chosen_district.iloc[0]['BR_Left'])
+radius_size_meters = geopy.distance.geodesic(origin_location, bottom_left).m
 
-chosen_city = df[df['city'] == city_string]
-
-location = (chosen_city.iloc[0]['lat'], chosen_city.iloc[0]['lng'])
-
-distance = miles_to_meters(radius_miles_from_center)
-
-# Client
+# Find and record all locations of types defined in 'search_type_list' withing the given radius 'distance'
 map_client = googlemaps.Client(key = API_KEY)
-
 lst_df = []
 for t in search_type_list:
     lst_temp = []
     response = map_client.places_nearby(
-        location=location,
-        radius=distance,
+        location=origin_location,
+        radius=radius_size_meters,
         type=t,
     )
     lst_temp.extend(response.get('results'))
@@ -46,8 +37,8 @@ for t in search_type_list:
         time.sleep(3)
 
         response = map_client.places_nearby(
-            location=location,
-            radius=distance,
+            location=origin_location,
+            radius=radius_size_meters,
             type=t,
             page_token=next_page_token
         )
@@ -56,7 +47,10 @@ for t in search_type_list:
         next_page_token = response.get('next_page_token')
     lst_df.append(pd.DataFrame(lst_temp))
 
+# Store locations for various types in different csvs
 for i in range(0, len(lst_df)):
-    lst_df[i][['geometry']].to_csv(f'/Users/nateoppenheimer/code/willbanny/Location-Analysis/raw_data/features/{search_type_list[i]}.csv')
-
-# lst_df[0]
+    formatted_df = pd.DataFrame(lst_df[i]['geometry'].map(lambda x: x['location'])).copy()
+    formatted_df['lat'] = formatted_df['geometry'].map(lambda x: x['lat'])
+    formatted_df['lng'] = formatted_df['geometry'].map(lambda x: x['lng'])
+    formatted_df = formatted_df.drop(columns=['geometry'])
+    formatted_df.to_csv(f'/Users/nateoppenheimer/code/willbanny/Location-Analysis/raw_data/features/{district_string}{search_type_list[i]}.csv')
