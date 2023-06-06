@@ -55,5 +55,46 @@ def get_google_df(district):
 
 
 def get_crime_df(district):
-    '''function that returns a dataframe of all the crime stats for
-    a specified district'''
+    '''function that finds the district ID from master table
+    based on specified district, and then returns a dataframe of all the crime stats for
+    that district_ID'''
+    query1 = '''
+            SELECT District_ID
+            FROM {GCP_PROJECT}.{BQ_DATASET}.{BQ_DISTRICT_TABLE}
+            WHERE District = {district}'''
+
+    district_id = bigquery.Client(project=GCP_PROJECT).query(query1).result()
+
+    query2 = f"""
+            SELECT {",".join(CRIME_COLUMN_NAMES_RAW)}
+            FROM {GCP_PROJECT}.{BQ_DATASET}.{BQ_CRIME_TABLE}
+            WHERE {BQ_CRIME_TABLE}.District_Name = "{district_id}"
+        """
+
+    client = bigquery.Client(project=GCP_PROJECT)
+    query_job = client.query(query2)
+    result = query_job.result()
+    crime_df = result.to_dataframe()
+    return crime_df
+
+
+query1 = f'''
+        SELECT District_ID
+        FROM {GCP_PROJECT}.{BQ_DATASET}.{BQ_DISTRICT_TABLE}
+        WHERE District = "City of Leicester (B)"'''
+
+district_id_df = bigquery.Client(project=GCP_PROJECT).query(query1).result().to_dataframe()
+district_id = district_id_df.iloc[0]['District_ID']
+
+print(district_id)
+query2 = f"""
+        SELECT {",".join(CRIME_COLUMN_NAMES_RAW)}
+        FROM {GCP_PROJECT}.{BQ_DATASET}.{BQ_CRIME_TABLE}
+        WHERE {BQ_CRIME_TABLE}.District_ID = "{district_id}"
+    """
+
+client = bigquery.Client(project=GCP_PROJECT)
+query_job = client.query(query2)
+result = query_job.result()
+crime_df = result.to_dataframe()
+print(crime_df.head())
