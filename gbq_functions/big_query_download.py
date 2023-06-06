@@ -18,4 +18,11 @@ def get_master_district_df():
     query_job = client.query(query)
     result = query_job.result()
     master_districts_df = result.to_dataframe()
+    print(master_districts_df.head())
     return master_districts_df
+
+query = f"""
+        SELECT {",".join(MASTER_COLUMN_NAMES_RAW)}
+        FROM {GCP_PROJECT}.{BQ_DATASET}.{BQ_DISTRICT_TABLE}
+        ORDER BY HECTARES DESC
+    """
