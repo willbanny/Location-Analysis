@@ -14,7 +14,7 @@ search_type_list = ['hospital', 'train_station', 'bus_station', 'park', 'place_o
 # search_type_list = ['hospital']
 
 # load district db as df
-df_districts = pd.read_csv('/Users/nateoppenheimer/code/willbanny/Location-Analysis/raw_data/district_coords_clean.csv')
+df_districts = pd.read_csv(f'{PWD_CURR}/raw_data/district_coords_clean.csv')
 
 chosen_district = df_districts[df_districts['District'] == district_string]
 origin_location = (chosen_district.iloc[0]['Centroid_Lat'], chosen_district.iloc[0]['Centroid_Lon'])
@@ -59,4 +59,4 @@ for i in range(0, len(lst_df)):
 result = pd.concat(frames)
 result['district'] = district_string
 
-result.to_csv(f'/Users/nateoppenheimer/code/willbanny/Location-Analysis/raw_data/features/google_data.csv', index=False)
+result.to_csv(f'{PWD_CURR}/raw_data/features/google_data.csv', index=False)
