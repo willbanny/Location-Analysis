@@ -48,9 +48,15 @@ for t in search_type_list:
     lst_df.append(pd.DataFrame(lst_temp))
 
 # Store locations for various types in different csvs
+frames = []
 for i in range(0, len(lst_df)):
     formatted_df = pd.DataFrame(lst_df[i]['geometry'].map(lambda x: x['location'])).copy()
     formatted_df['lat'] = formatted_df['geometry'].map(lambda x: x['lat'])
     formatted_df['lng'] = formatted_df['geometry'].map(lambda x: x['lng'])
     formatted_df = formatted_df.drop(columns=['geometry'])
-    formatted_df.to_csv(f'/Users/nateoppenheimer/code/willbanny/Location-Analysis/raw_data/features/{district_string}{search_type_list[i]}.csv')
+    formatted_df['feature_name'] = search_type_list[i]
+    frames.append(formatted_df.copy())
+result = pd.concat(frames)
+result['district'] = district_string
+
+result.to_csv(f'/Users/nateoppenheimer/code/willbanny/Location-Analysis/raw_data/features/google_data.csv', index=False)
