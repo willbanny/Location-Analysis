@@ -18,11 +18,22 @@ def get_master_district_df():
     query_job = client.query(query)
     result = query_job.result()
     master_districts_df = result.to_dataframe()
-    print(master_districts_df.head())
     return master_districts_df
 
-query = f"""
-        SELECT {",".join(MASTER_COLUMN_NAMES_RAW)}
-        FROM {GCP_PROJECT}.{BQ_DATASET}.{BQ_DISTRICT_TABLE}
-        ORDER BY HECTARES DESC
-    """
+def get_district_gridpoints_df(district):
+    '''function that returns the full master district df.
+    Dataframe contains district name (primary key), lat_lons for the center,
+    lat_lons for the edges of rectangle around area, and the area of the
+    rectangle in Hectares'''
+
+    query = f"""
+            SELECT {",".join(GRID_COLUMN_NAMES_RAW)}
+            FROM {GCP_PROJECT}.{BQ_DATASET}.{BQ_GRID_TABLE}
+            WHERE {BQ_GRID_TABLE}.District = "{district}"
+        """
+
+    client = bigquery.Client(project=GCP_PROJECT)
+    query_job = client.query(query)
+    result = query_job.result()
+    district_grid_df = result.to_dataframe()
+    return district_grid_df
