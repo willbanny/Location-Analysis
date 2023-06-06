@@ -2,9 +2,6 @@ import os
 import numpy as np
 
 ##################  VARIABLES  ##################
-CLIENT_ID = os.environ.get("MB_ID")
-CLIENT_SECRET = os.environ.get("MB_SECRET")
-
 GCP_PROJECT = os.environ.get("GCP_PROJECT")
 BQ_DATASET = os.environ.get("BQ_DATASET")
 BQ_REGION = os.environ.get("BQ_REGION")
