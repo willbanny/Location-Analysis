@@ -58,17 +58,18 @@ def get_crime_df(district):
     '''function that finds the district ID from master table
     based on specified district, and then returns a dataframe of all the crime stats for
     that district_ID'''
-    query1 = '''
+    query1 = f'''
             SELECT District_ID
             FROM {GCP_PROJECT}.{BQ_DATASET}.{BQ_DISTRICT_TABLE}
             WHERE District = {district}'''
 
-    district_id = bigquery.Client(project=GCP_PROJECT).query(query1).result()
+    district_id_df = bigquery.Client(project=GCP_PROJECT).query(query1).result().to_dataframe()
+    district_id = district_id_df.iloc[0]['District_ID']
 
     query2 = f"""
             SELECT {",".join(CRIME_COLUMN_NAMES_RAW)}
             FROM {GCP_PROJECT}.{BQ_DATASET}.{BQ_CRIME_TABLE}
-            WHERE {BQ_CRIME_TABLE}.District_Name = "{district_id}"
+            WHERE {BQ_CRIME_TABLE}.District_ID = "{district_id}"
         """
 
     client = bigquery.Client(project=GCP_PROJECT)
@@ -78,23 +79,26 @@ def get_crime_df(district):
     return crime_df
 
 
-query1 = f'''
-        SELECT District_ID
-        FROM {GCP_PROJECT}.{BQ_DATASET}.{BQ_DISTRICT_TABLE}
-        WHERE District = "City of Leicester (B)"'''
+def get_deprivation_df(district):
+    '''function that finds the district ID from master table
+    based on specified district, and then returns a dataframe of all the crime stats for
+    that district_ID'''
+    query1 = f'''
+            SELECT District_ID
+            FROM {GCP_PROJECT}.{BQ_DATASET}.{BQ_DISTRICT_TABLE}
+            WHERE District = {district}'''
 
-district_id_df = bigquery.Client(project=GCP_PROJECT).query(query1).result().to_dataframe()
-district_id = district_id_df.iloc[0]['District_ID']
+    district_id_df = bigquery.Client(project=GCP_PROJECT).query(query1).result().to_dataframe()
+    district_id = district_id_df.iloc[0]['Local_Authority_District_code__2019_']
 
-print(district_id)
-query2 = f"""
-        SELECT {",".join(CRIME_COLUMN_NAMES_RAW)}
-        FROM {GCP_PROJECT}.{BQ_DATASET}.{BQ_CRIME_TABLE}
-        WHERE {BQ_CRIME_TABLE}.District_ID = "{district_id}"
-    """
+    query2 = f"""
+            SELECT {",".join(DEP_COLUMN_NAMES_RAW)}
+            FROM {GCP_PROJECT}.{BQ_DATASET}.{BQ_DEP_TABLE}
+            WHERE {BQ_DEP_TABLE}.Local_Authority_District_code__2019_ = "{district_id}"
+        """
 
-client = bigquery.Client(project=GCP_PROJECT)
-query_job = client.query(query2)
-result = query_job.result()
-crime_df = result.to_dataframe()
-print(crime_df.head())
+    client = bigquery.Client(project=GCP_PROJECT)
+    query_job = client.query(query2)
+    result = query_job.result()
+    dep_df = result.to_dataframe()
+    return dep_df
