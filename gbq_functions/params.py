@@ -7,6 +7,8 @@ BQ_DATASET = os.environ.get("BQ_DATASET")
 BQ_REGION = os.environ.get("BQ_REGION")
 BQ_DISTRICT_TABLE = os.environ.get("BQ_DISTRICT_TABLE")
 BQ_GRID_TABLE = os.environ.get("BQ_DISTRICT_GRID_TABLE")
+BQ_GOOGLE_TABLE = os.environ.get("BQ_GOOGLE_TABLE")
+
 
 MASTER_COLUMN_NAMES_RAW = ["District",
     "HECTARES",
@@ -39,3 +41,15 @@ GRID_DTYPES_RAW = {
     "Longitude": "float32",
     "Latitude": "float32"
 }
+
+GOOGLE_COLUMN_NAMES_RAW = ["lat",
+    "lng",
+    "feature_name",
+    "district"]
+GOOGLE_DTYPES_RAW = {
+    "lat": "float32",
+    "lng": "float32",
+    "feature_name": "object",
+    "district": "object"
+}
+
