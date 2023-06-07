@@ -152,21 +152,29 @@ def upload_golden_df(district:str,
     result = job.result()  # wait for the job to complete
     print(f"✅ Merged {district} Data saved to bigquery, with shape {data.shape}")
 
+    
 
-# def get_golden_df(district:str):
-#     '''
-#     function that pulls the merged dataframe for data per district
-#     '''
-#     query1 = f'''
-#             SELECT District_ID
-#             FROM {GCP_PROJECT}.{BQ_DATASET}.{BQ_DISTRICT_TABLE}
-#             WHERE District = "{district}"'''
 
-#     district_id_df = bigquery.Client(project=GCP_PROJECT).query(query1).result().to_dataframe()
-#     district_id = district_id_df.iloc[0]['District_ID']
+def get_golden_df(district:str):
+    '''
+    function that pulls the merged dataframe for data per district
+    '''
+    query1 = f'''
+            SELECT District_ID
+            FROM {GCP_PROJECT}.{BQ_DATASET}.{BQ_DISTRICT_TABLE}
+            WHERE District = "{district}"'''
 
-#     query2 = f"""
-#             SELECT DISTINCT *
-#             FROM {GCP_PROJECT}.{BQ_DATASET}.{BQ_GOLDEN_TABLE}
-#             WHERE {BQ_GOLDEN_TABLE}.District_ID = "{district_id}"
-#         """
+    district_id_df = bigquery.Client(project=GCP_PROJECT).query(query1).result().to_dataframe()
+    district_id = district_id_df.iloc[0]['District_ID']
+
+    query2 = f"""
+            SELECT DISTINCT *
+            FROM {GCP_PROJECT}.{BQ_DATASET}.{BQ_GOLDEN_TABLE}
+            WHERE {BQ_GOLDEN_TABLE}.District_ID = "{district_id}"
+        """
+
+    client = bigquery.Client(project=GCP_PROJECT)
+    query_job = client.query(query2)
+    result = query_job.result()
+    dep_df = result.to_dataframe()
+    return dep_df
