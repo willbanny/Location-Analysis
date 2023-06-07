@@ -1,23 +1,65 @@
 import pandas as pd
+import numpy as np
 import geopy.distance as GD
+from gbq_functions.big_query_download import *
+from sklearn.neighbors import BallTree
 
-radius_list = [500, 1000, 1500]
+radius_list = [0, 500, 1000, 1500]
 
-grid_coords = pd.read_csv('/Users/nateoppenheimer/code/willbanny/Location-Analysis/raw_data/features/bquxjob_2efec792_188918eb4d5.csv')
-google_data = pd.read_csv('/Users/nateoppenheimer/code/willbanny/Location-Analysis/raw_data/features/google_data.csv')
+grid_coords = get_district_gridpoints_df('City of Leicester (B)')
+google_data = get_google_df('City of Leicester (B)')
+crime_data = get_crime_df('City of Leicester (B)')
+crime_data = crime_data.rename(columns={"Latitude": "lat", "Longitude": "lng"})
+dep_df = get_deprivation_df('City of Leicester (B)')
+
+grid_coords = grid_coords.rename(columns={"Latitude": "lat", "Longitude": "lng"})
 
 google_engineered = grid_coords.copy()
-google_engineered = google_engineered.rename(columns={"Latitude": "lat", "Longitude": "lng"})
+crime_engineered = grid_coords.copy()
 
-def find_given_radius(r, grid_coords, google_data, features):
+def ret_true_false(c1, c2, r):
+    dis = GD.geodesic((c1['lng'], c1['lat']), (c2['lng'], c2['lat'])).m
+    if dis < r[1] and dis > r[0]:
+        return True
+    return False
+
+def find_given_radius(r, google_engineered, google_data, features, feature_name):
     for f in features:
-        grid_coords[f'{f}_{r}'] = \
-        grid_coords.apply(lambda c1: google_data[google_data['feature_name']==f].apply\
-                             (lambda c2: GD.geodesic((c1['lng'], c1['lat']), (c2['lng'], c2['lat'])).m < r, axis=1)\
+        google_engineered[f'{f}_{r[1]}'] = \
+        google_engineered.apply(lambda c1: google_data[google_data[f'{feature_name}']==f].apply\
+                             (lambda c2: ret_true_false(c1, c2, r), axis=1)\
                              .sum(), axis=1)
-    return grid_coords
+    return google_engineered
 
-for r in radius_list:
-    google_engineered = find_given_radius(r, google_engineered, google_data, list(google_data['feature_name'].unique()))
+# google -- engineering
 
-google_engineered.to_csv('trial.csv')
+for i in range(0, len(radius_list)-1):
+    google_engineered = find_given_radius(radius_list[i:i+2], google_engineered, google_data, list(google_data['feature_name'].unique()), 'feature_name')
+
+# crime -- engineering
+
+for i in range(0, len(radius_list)-1):
+    crime_engineered = find_given_radius(radius_list[i:i+2], crime_engineered, crime_data, list(crime_data['Crime_type'].unique()), 'Crime_type')
+
+# dep -- engineering
+
+bt = BallTree(np.deg2rad(dep_df[['latitude', 'longitude']].values), metric='haversine')
+
+distances, indices = bt.query(np.deg2rad(grid_coords[['lat', 'lng']]))
+
+dep_engineered = dep_df.iloc[indices[:, 0]]
+dep_engineered[['lng', 'lat']] = grid_coords[['lng', 'lat']].values
+
+# Upload
+
+google_engineered.to_csv('google_trail_bigQuery.csv')
+crime_engineered.to_csv('crime_trial_bigQuery.csv')
+dep_engineered.to_csv('dep_trial_bigQuery.csv')
+
+# Build Golden DF
+golden_df = google_engineered\
+.merge(crime_engineered, how='left', on=['lng', 'lat'])\
+.merge(dep_engineered, how='left', on=['lng', 'lat'])
+
+# Upload Golden DF
+golden_df.to_csv('golden_df_trial_bigQuery.csv')
