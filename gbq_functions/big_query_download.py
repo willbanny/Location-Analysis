@@ -19,6 +19,8 @@ def get_master_district_df():
     result = query_job.result()
     master_districts_df = result.to_dataframe()
     return master_districts_df
+output = get_master_district_df()
+print(output.head())
 
 def get_district_gridpoints_df(district):
     '''function that returns a dataframe of all the grid point coordinates
@@ -113,7 +115,7 @@ def upload_google_api_outputs(district:str,
     '''
 
     assert isinstance(data, pd.DataFrame)
-    full_table_name = f"{GCP_PROJECT}.{BQ_DATASET}.google_api_data"
+    full_table_name = f"{GCP_PROJECT}.{BQ_DATASET}.{BQ_GOOGLE_TABLE}"
     print(f"\nSave {district} data to BigQuery @ {full_table_name}...:")
 
     # Load data onto full_table_name
@@ -136,7 +138,7 @@ def upload_golden_df(district:str,
     '''
 
     assert isinstance(data, pd.DataFrame)
-    full_table_name = f"{GCP_PROJECT}.{BQ_DATASET}.full_merged_data"
+    full_table_name = f"{GCP_PROJECT}.{BQ_DATASET}.{BQ_GOLDEN_TABLE}"
     print(f"\nSave combined {district} data to BigQuery @ {full_table_name}...:")
 
     # Load data onto full_table_name
@@ -149,3 +151,22 @@ def upload_golden_df(district:str,
     job = client.load_table_from_dataframe(data, full_table_name, job_config=job_config)
     result = job.result()  # wait for the job to complete
     print(f"✅ Merged {district} Data saved to bigquery, with shape {data.shape}")
+
+
+# def get_golden_df(district:str):
+#     '''
+#     function that pulls the merged dataframe for data per district
+#     '''
+#     query1 = f'''
+#             SELECT District_ID
+#             FROM {GCP_PROJECT}.{BQ_DATASET}.{BQ_DISTRICT_TABLE}
+#             WHERE District = "{district}"'''
+
+#     district_id_df = bigquery.Client(project=GCP_PROJECT).query(query1).result().to_dataframe()
+#     district_id = district_id_df.iloc[0]['District_ID']
+
+#     query2 = f"""
+#             SELECT DISTINCT *
+#             FROM {GCP_PROJECT}.{BQ_DATASET}.{BQ_GOLDEN_TABLE}
+#             WHERE {BQ_GOLDEN_TABLE}.District_ID = "{district_id}"
+#         """
