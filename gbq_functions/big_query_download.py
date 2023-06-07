@@ -39,10 +39,10 @@ def get_district_gridpoints_df(district):
 
 def get_google_df(district):
     '''function that returns a dataframe of all the google features for
-    a specified district'''
+    a specified district, filtering out any duplicate values from prior uploads'''
 
     query = f"""
-            SELECT {",".join(GOOGLE_COLUMN_NAMES_RAW)}
+            SELECT DISTINCT {",".join(GOOGLE_COLUMN_NAMES_RAW)}
             FROM {GCP_PROJECT}.{BQ_DATASET}.{BQ_GOOGLE_TABLE}
             WHERE {BQ_GOOGLE_TABLE}.district = "{district}"
         """
@@ -106,10 +106,10 @@ def get_deprivation_df(district):
 
 def upload_google_api_outputs(district:str,
                               data: pd.DataFrame,
-                              truncate: bool):
+                              truncate=False):
     '''
     Save output of google_api call to BigQuery, appending new data to existing dataset
-    NEED TO FIGURE OUT DUPLICATES ISSUE
+    inputs required: district name and a pd.dataframe from google api call.
     '''
 
     assert isinstance(data, pd.DataFrame)
@@ -127,3 +127,25 @@ def upload_google_api_outputs(district:str,
     result = job.result()  # wait for the job to complete
     print(f"✅ {district} Data saved to bigquery, with shape {data.shape}")
 
+
+def upload_golden_df(district:str,
+                              data: pd.DataFrame,
+                              truncate=False):
+    '''
+    Upload the dataframe of the merged crime, google, and deprivation stats to GBQ.
+    '''
+
+    assert isinstance(data, pd.DataFrame)
+    full_table_name = f"{GCP_PROJECT}.{BQ_DATASET}.full_merged_data"
+    print(f"\nSave combined {district} data to BigQuery @ {full_table_name}...:")
+
+    # Load data onto full_table_name
+
+    client = bigquery.Client()
+
+    write_mode = "WRITE_TRUNCATE" if truncate else "WRITE_APPEND"
+    job_config = bigquery.LoadJobConfig(write_disposition=write_mode)
+
+    job = client.load_table_from_dataframe(data, full_table_name, job_config=job_config)
+    result = job.result()  # wait for the job to complete
+    print(f"✅ Merged {district} Data saved to bigquery, with shape {data.shape}")
