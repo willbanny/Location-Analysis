@@ -89,7 +89,7 @@ def get_deprivation_df(district):
             WHERE District = "{district}"'''
 
     district_id_df = bigquery.Client(project=GCP_PROJECT).query(query1).result().to_dataframe()
-    district_id = district_id_df.iloc[0]['Local_Authority_District_code__2019_']
+    district_id = district_id_df.iloc[0]['District_ID']
 
     query2 = f"""
             SELECT {",".join(DEP_COLUMN_NAMES_RAW)}
@@ -126,3 +126,4 @@ def upload_google_api_outputs(district:str,
     job = client.load_table_from_dataframe(data, full_table_name, job_config=job_config)
     result = job.result()  # wait for the job to complete
     print(f"✅ {district} Data saved to bigquery, with shape {data.shape}")
+
