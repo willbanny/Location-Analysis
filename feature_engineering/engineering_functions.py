@@ -5,12 +5,13 @@ from gbq_functions.big_query_download import *
 from sklearn.neighbors import BallTree
 
 radius_list = [0, 500, 1000, 1500]
+district_string = 'City of Leicester (B)'
 
-grid_coords = get_district_gridpoints_df('City of Leicester (B)')
-google_data = get_google_df('City of Leicester (B)')
-crime_data = get_crime_df('City of Leicester (B)')
+grid_coords = get_district_gridpoints_df(district_string)
+google_data = get_google_df(district_string)
+crime_data = get_crime_df(district_string)
 crime_data = crime_data.rename(columns={"Latitude": "lat", "Longitude": "lng"})
-dep_df = get_deprivation_df('City of Leicester (B)')
+dep_df = get_deprivation_df(district_string)
 
 grid_coords = grid_coords.rename(columns={"Latitude": "lat", "Longitude": "lng"})
 
@@ -62,4 +63,13 @@ golden_df = google_engineered\
 .merge(dep_engineered, how='left', on=['lng', 'lat'])
 
 # Upload Golden DF
+# golden_df[list(golden_df.select_dtypes('int64').columns)] = \
+#     golden_df[list(golden_df.select_dtypes('int64').columns)].astype('float64')
+col_nam = []
+for i in list(golden_df.columns):
+    x = i.replace(' ', '_')
+    col_nam.append(x.replace('-', '_'))
+golden_df.columns = col_nam
+
 golden_df.to_csv('golden_df_trial_bigQuery.csv')
+upload_golden_df(district_string, golden_df)

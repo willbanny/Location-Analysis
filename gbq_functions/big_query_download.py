@@ -19,8 +19,6 @@ def get_master_district_df():
     result = query_job.result()
     master_districts_df = result.to_dataframe()
     return master_districts_df
-output = get_master_district_df()
-print(output.head())
 
 def get_district_gridpoints_df(district):
     '''function that returns a dataframe of all the grid point coordinates
@@ -37,7 +35,6 @@ def get_district_gridpoints_df(district):
     result = query_job.result()
     district_grid_df = result.to_dataframe()
     return district_grid_df
-
 
 def get_google_df(district):
     '''function that returns a dataframe of all the google features for
