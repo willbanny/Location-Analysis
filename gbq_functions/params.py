@@ -10,10 +10,11 @@ BQ_GRID_TABLE = os.environ.get("BQ_DISTRICT_GRID_TABLE")
 BQ_GOOGLE_TABLE = os.environ.get("BQ_GOOGLE_TABLE")
 BQ_CRIME_TABLE = os.environ.get("BQ_CRIME_TABLE")
 BQ_DEP_TABLE = os.environ.get("BQ_DEP_TABLE")
+BQ_GOLDEN_TABLE = os.environ.get("BQ_GOLDEN_TABLE")
 
 MASTER_COLUMN_NAMES_RAW = ["District",
     "HECTARES",
-    "District_ID"
+    "District_ID",
     "BR_Left",
     "BR_Top",
     "BR_Right",
@@ -146,4 +147,3 @@ DEP_DTYPES_RAW = {
     "longitude": "float32",
     "latitude": "float32"
 }
-
