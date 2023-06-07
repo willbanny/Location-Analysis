@@ -61,7 +61,7 @@ def get_crime_df(district):
     query1 = f'''
             SELECT District_ID
             FROM {GCP_PROJECT}.{BQ_DATASET}.{BQ_DISTRICT_TABLE}
-            WHERE District = {district}'''
+            WHERE District = "{district}"'''
 
     district_id_df = bigquery.Client(project=GCP_PROJECT).query(query1).result().to_dataframe()
     district_id = district_id_df.iloc[0]['District_ID']
@@ -86,7 +86,7 @@ def get_deprivation_df(district):
     query1 = f'''
             SELECT District_ID
             FROM {GCP_PROJECT}.{BQ_DATASET}.{BQ_DISTRICT_TABLE}
-            WHERE District = {district}'''
+            WHERE District = "{district}"'''
 
     district_id_df = bigquery.Client(project=GCP_PROJECT).query(query1).result().to_dataframe()
     district_id = district_id_df.iloc[0]['Local_Authority_District_code__2019_']
