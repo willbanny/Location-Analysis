@@ -102,3 +102,27 @@ def get_deprivation_df(district):
     result = query_job.result()
     dep_df = result.to_dataframe()
     return dep_df
+
+
+def upload_google_api_outputs(district:str,
+                              data: pd.DataFrame,
+                              truncate: bool):
+    '''
+    Save output of google_api call to BigQuery, appending new data to existing dataset
+    NEED TO FIGURE OUT DUPLICATES ISSUE
+    '''
+
+    assert isinstance(data, pd.DataFrame)
+    full_table_name = f"{GCP_PROJECT}.{BQ_DATASET}.google_api_data"
+    print(f"\nSave {district} data to BigQuery @ {full_table_name}...:")
+
+    # Load data onto full_table_name
+
+    client = bigquery.Client()
+
+    write_mode = "WRITE_TRUNCATE" if truncate else "WRITE_APPEND"
+    job_config = bigquery.LoadJobConfig(write_disposition=write_mode)
+
+    job = client.load_table_from_dataframe(data, full_table_name, job_config=job_config)
+    result = job.result()  # wait for the job to complete
+    print(f"✅ {district} Data saved to bigquery, with shape {data.shape}")
