@@ -4,3 +4,6 @@ db-dtypes
 google-cloud-storage
 google-cloud-core
 google-cloud-bigquery
+streamlit
+folium
+streamlit_folium
