@@ -4,75 +4,140 @@ import geopy.distance as GD
 from gbq_functions.big_query_download import *
 from sklearn.neighbors import BallTree
 from gbq_functions.big_query_download import *
+from math import radians, sin, cos, sqrt, atan2
 
-radius_list = [0, 250, 500, 750]
+def calculate_distance(coord1, coord2):
+    # Convert coordinates to radians
+    lon1, lat1 = radians(coord1['lng']), radians(coord1['latitude'])
+    lon2, lat2 = radians(coord2['lng']), radians(coord2['latitude'])
 
-district_string = 'Croydon London Boro'
+    # Haversine formula
+    dlon = lon2 - lon1
+    dlat = lat2 - lat1
+    a = np.sin(dlat/2)**2 + np.cos(lat1) * np.cos(lat2) * np.sin(dlon/2)**2
+    c = 2 * np.arctan2(np.sqrt(a), np.sqrt(1-a))
+    distance = 6371 * c  # Radius of the Earth in kilometers
 
-grid_coords = get_district_gridpoints_df(district_string)
-google_data = get_google_df(district_string)
-crime_data = get_crime_df(district_string)
-crime_data = crime_data.rename(columns={"Latitude": "lat", "Longitude": "lng"})
-dep_df = get_deprivation_df(district_string)
-print(f'+----------------------------------------+\nfinished getting all data from big querey\n+----------------------------------------+\n')
+    return distance * 1000  # Convert distance to meters
 
-grid_coords = grid_coords.rename(columns={"Latitude": "lat", "Longitude": "lng"})
+def count_coordinates_within_distance(coord_df, target_df, distance):
+    coord_df_rad = np.radians(coord_df[['lng', 'lat']])
+    target_df_rad = np.radians(target_df[['lng', 'lat']])
 
-google_engineered = grid_coords.copy()
-crime_engineered = grid_coords.copy()
+    lat_diff = target_df_rad['lat'].values[:, np.newaxis] - coord_df_rad['lat'].values
+    lon_diff = target_df_rad['lng'].values[:, np.newaxis] - coord_df_rad['lng'].values
 
-def ret_true_false(c1, c2, r):
-    dis = GD.geodesic((c1['lng'], c1['lat']), (c2['lng'], c2['lat'])).m
-    if dis < r[1] and dis > r[0]:
-        return True
-    return False
+    a = np.sin(lat_diff / 2)**2 + np.cos(target_df_rad['lat'].values[:, np.newaxis]) * \
+        np.cos(coord_df_rad['lat'].values) * np.sin(lon_diff / 2)**2
+    c = 2 * np.arctan2(np.sqrt(a), np.sqrt(1 - a))
+    distances = 6371 * c * 1000  # Convert distance to meters
 
-def find_given_radius(r, google_engineered, google_data, features, feature_name):
-    for f in features:
-        google_engineered[f'{f}_{r[1]}'] = \
-        google_engineered.apply(lambda c1: google_data[google_data[f'{feature_name}']==f].apply\
-                             (lambda c2: ret_true_false(c1, c2, r), axis=1)\
-                             .sum(), axis=1)
-    return google_engineered
+    counts = np.sum((distances >= distance[0]) & (distances <= distance[1]), axis=1)
+    return counts
 
-# google -- engineering
+district_list = ['Croydon London Boro',
+ 'Bromley London Boro',
+ 'Hounslow London Boro',
+ 'Ealing London Boro',
+ 'Havering London Boro',
+ 'Harrow London Boro',
+ 'Brent London Boro',
+ 'Barnet London Boro',
+ 'Lambeth London Boro',
+ 'Southwark London Boro',
+ 'Lewisham London Boro',
+ 'Greenwich London Boro',
+ 'Bexley London Boro',
+ 'Waltham Forest London Boro',
+ 'Redbridge London Boro',
+ 'Richmond upon Thames London Boro',
+ 'Merton London Boro',
+ 'Wandsworth London Boro',
+ 'Kensington and Chelsea London Boro',
+ 'City of Westminster London Boro',
+ 'Camden London Boro',
+ 'Tower Hamlets London Boro',
+ 'Islington London Boro',
+ 'Hackney London Boro',
+ 'Haringey London Boro',
+ 'Newham London Boro',
+ 'Barking and Dagenham London Boro',
+ 'City and County of the City of London',
+ 'Kingston upon Thames London Boro',
+ 'Enfield London Boro',
+ 'Sutton London Boro',
+ 'Hammersmith and Fulham London Boro',
+ 'Hillingdon London Boro']
 
-for i in range(0, len(radius_list)-1):
-    google_engineered = find_given_radius(radius_list[i:i+2], google_engineered, google_data, list(google_data['feature_name'].unique()), 'feature_name')
-    print(f'+------------------------------------------+ \nFinished counting google stuff in radius: {radius_list[i+1]}\n+------------------------------------------+')
+count_num_dis_to_bq = 0
+for district_string in district_list:
 
-# crime -- engineering
+    radius_list = [0, 250, 500, 750]
 
-for i in range(0, len(radius_list)-1):
-    crime_engineered = find_given_radius(radius_list[i:i+2], crime_engineered, crime_data, list(crime_data['Crime_type'].unique()), 'Crime_type')
-    print(f'+------------------------------------------+ \nFinished counting crime stuff in radius: {radius_list[i+1]}\n+------------------------------------------+')
-# dep -- engineering
+    district_string = district_string
 
-bt = BallTree(np.deg2rad(dep_df[['latitude', 'longitude']].values), metric='haversine')
+    grid_coords = get_district_gridpoints_df(district_string)
+    google_data = get_google_df(district_string)
+    crime_data = get_crime_df(district_string)
+    crime_data = crime_data.rename(columns={"Latitude": "lat", "Longitude": "lng"})
+    dep_df = get_deprivation_df(district_string)
+    print(f'+----------------------------------------+\nfinished getting all data from big querey\n+----------------------------------------+\n')
 
-distances, indices = bt.query(np.deg2rad(grid_coords[['lat', 'lng']]))
+    grid_coords = grid_coords.rename(columns={"Latitude": "lat", "Longitude": "lng"})
 
-dep_engineered = dep_df.iloc[indices[:, 0]]
-dep_engineered[['lng', 'lat']] = grid_coords[['lng', 'lat']].values
-print('finished with the finding closest dep thing')
+    # google -- engineering
+    google_engineered = pd.DataFrame()
+    features = list(google_data['feature_name'].unique())
+    for i in range(0, len(radius_list)-1):
+        for f in features:
+            google_engineered[f'{f}_{radius_list[i+1]}']\
+                =count_coordinates_within_distance\
+                    (google_data[google_data['feature_name']==f][['lat', 'lng']], grid_coords[['lat', 'lng']], radius_list[i:(i+2)])
+            print(f'{f}_{radius_list[i+1]} completed')
+    google_engineered = google_engineered.join(grid_coords[['lng', 'lat']])
 
-# Upload
-google_engineered.to_csv('google_trail_bigQuery.csv')
-crime_engineered.to_csv('crime_trial_bigQuery.csv')
-dep_engineered.to_csv('dep_trial_bigQuery.csv')
 
-# Build Golden DF
-golden_df = google_engineered\
-.merge(crime_engineered, how='left', on=['lng', 'lat'])\
-.merge(dep_engineered, how='left', on=['lng', 'lat'])
+    # crime -- engineering
+    crime_engineered = pd.DataFrame()
+    features = list(crime_data['Crime_type'].unique())
+    for i in range(0, len(radius_list)-1):
+        for f in features:
+            crime_engineered[f'{f}_{radius_list[i+1]}']\
+                =count_coordinates_within_distance\
+                    (crime_data[crime_data['Crime_type']==f][['lat', 'lng']], grid_coords[['lat', 'lng']], radius_list[i:(i+2)])
+            print(f'{f}_{radius_list[i+1]} completed')
+    crime_engineered = crime_engineered.join(grid_coords[['lng', 'lat']])
 
-# Upload Golden DF
-new_l = []
-for c_name in list(golden_df.columns):
-    c_name = c_name.replace('-', '_')
-    c_name = c_name.replace(' ', '_')
-    new_l.append(c_name)
-golden_df.columns = new_l
+    print('\n+============================================================+\nAll distances to crime and google maps features complete\n+============================================================+\n')
 
-golden_df.to_csv('golden_df_trial_bigQuery.csv')
-upload_golden_df(district_string, golden_df)
+    # deprevation -- engineering
+    bt = BallTree(np.deg2rad(dep_df[['latitude', 'longitude']].values), metric='haversine')
+
+    distances, indices = bt.query(np.deg2rad(grid_coords[['lat', 'lng']]))
+
+    dep_engineered = dep_df.iloc[indices[:, 0]]
+    dep_engineered[['lng', 'lat']] = grid_coords[['lng', 'lat']].values
+    print('\n+============================================================+\nFinished with the finding closest dep thing\n+============================================================+\n')
+
+    # Store
+    # google_engineered.to_csv('google_trail_bigQuery.csv')
+    # crime_engineered.to_csv('crime_trial_bigQuery.csv')
+    # dep_engineered.to_csv('dep_trial_bigQuery.csv')
+
+    # Build Golden DF
+    golden_df = google_engineered\
+    .merge(crime_engineered, how='left', on=['lng', 'lat'])\
+    .merge(dep_engineered, how='left', on=['lng', 'lat'])
+
+    # Upload Golden DF
+    new_l = []
+    for c_name in list(golden_df.columns):
+        c_name = c_name.replace('-', '_')
+        c_name = c_name.replace(' ', '_')
+        new_l.append(c_name)
+    golden_df.columns = new_l
+    golden_df['district_name'] = district_string
+
+    # golden_df.to_csv('golden_df_trial_bigQuery.csv')
+    upload_golden_df(district_string, golden_df)
+    print(f'\n+============================================================+\nGolden DF Uploaded for {district_string}\n+============================================================+\n')
