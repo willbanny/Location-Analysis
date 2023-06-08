@@ -3,14 +3,15 @@ import time
 import pandas as pd
 import geopy.distance
 from params import *
+from gbq_functions.big_query_download import *
 
 
 API_KEY = GOOGLE_PLACE_API_KEY
 # print(f'GOOGLE_PLACE_API_KEY = {GOOGLE_PLACE_API_KEY}')
 
 # --- SET VARIABLES ---
-district_string = 'City of Leicester (B)'
-search_type_list = ['hospital', 'train_station', 'bus_station', 'park', 'place_of_worship']
+district_string = 'Croydon London Boro'
+search_type_list = ['hospital', 'train_station', 'bus_station', 'park', 'place_of_worship', 'liquor_store']
 # search_type_list = ['hospital']
 
 # load district db as df
@@ -60,3 +61,5 @@ result = pd.concat(frames)
 result['district'] = district_string
 
 result.to_csv(f'{PWD_CURR}/raw_data/features/google_data.csv', index=False)
+
+upload_google_api_outputs(district_string, result)

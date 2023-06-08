@@ -19,8 +19,6 @@ def get_master_district_df():
     result = query_job.result()
     master_districts_df = result.to_dataframe()
     return master_districts_df
-output = get_master_district_df()
-print(output.head())
 
 def get_district_gridpoints_df(district):
     '''function that returns a dataframe of all the grid point coordinates
@@ -38,7 +36,6 @@ def get_district_gridpoints_df(district):
     district_grid_df = result.to_dataframe()
     return district_grid_df
 
-
 def get_google_df(district):
     '''function that returns a dataframe of all the google features for
     a specified district, filtering out any duplicate values from prior uploads'''
@@ -54,7 +51,6 @@ def get_google_df(district):
     result = query_job.result()
     google_df = result.to_dataframe()
     return google_df
-
 
 def get_crime_df(district):
     '''function that finds the district ID from master table
@@ -80,7 +76,6 @@ def get_crime_df(district):
     crime_df = result.to_dataframe()
     return crime_df
 
-
 def get_deprivation_df(district):
     '''function that finds the district ID from master table
     based on specified district, and then returns a dataframe of all the crime stats for
@@ -104,7 +99,6 @@ def get_deprivation_df(district):
     result = query_job.result()
     dep_df = result.to_dataframe()
     return dep_df
-
 
 def upload_google_api_outputs(district:str,
                               data: pd.DataFrame,
