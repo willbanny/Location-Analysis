@@ -3,14 +3,18 @@ import numpy as np
 import geopy.distance as GD
 from gbq_functions.big_query_download import *
 from sklearn.neighbors import BallTree
+from gbq_functions.big_query_download import *
 
-radius_list = [0, 500, 1000, 1500]
+radius_list = [0, 250, 500, 750]
 
-grid_coords = get_district_gridpoints_df('City of Leicester (B)')
-google_data = get_google_df('City of Leicester (B)')
-crime_data = get_crime_df('City of Leicester (B)')
+district_string = 'Croydon London Boro'
+
+grid_coords = get_district_gridpoints_df(district_string)
+google_data = get_google_df(district_string)
+crime_data = get_crime_df(district_string)
 crime_data = crime_data.rename(columns={"Latitude": "lat", "Longitude": "lng"})
-dep_df = get_deprivation_df('City of Leicester (B)')
+dep_df = get_deprivation_df(district_string)
+print(f'+----------------------------------------+\nfinished getting all data from big querey\n+----------------------------------------+\n')
 
 grid_coords = grid_coords.rename(columns={"Latitude": "lat", "Longitude": "lng"})
 
@@ -35,12 +39,13 @@ def find_given_radius(r, google_engineered, google_data, features, feature_name)
 
 for i in range(0, len(radius_list)-1):
     google_engineered = find_given_radius(radius_list[i:i+2], google_engineered, google_data, list(google_data['feature_name'].unique()), 'feature_name')
+    print(f'+------------------------------------------+ \nFinished counting google stuff in radius: {radius_list[i+1]}\n+------------------------------------------+')
 
 # crime -- engineering
 
 for i in range(0, len(radius_list)-1):
     crime_engineered = find_given_radius(radius_list[i:i+2], crime_engineered, crime_data, list(crime_data['Crime_type'].unique()), 'Crime_type')
-
+    print(f'+------------------------------------------+ \nFinished counting crime stuff in radius: {radius_list[i+1]}\n+------------------------------------------+')
 # dep -- engineering
 
 bt = BallTree(np.deg2rad(dep_df[['latitude', 'longitude']].values), metric='haversine')
@@ -49,9 +54,9 @@ distances, indices = bt.query(np.deg2rad(grid_coords[['lat', 'lng']]))
 
 dep_engineered = dep_df.iloc[indices[:, 0]]
 dep_engineered[['lng', 'lat']] = grid_coords[['lng', 'lat']].values
+print('finished with the finding closest dep thing')
 
 # Upload
-
 google_engineered.to_csv('google_trail_bigQuery.csv')
 crime_engineered.to_csv('crime_trial_bigQuery.csv')
 dep_engineered.to_csv('dep_trial_bigQuery.csv')
@@ -62,4 +67,12 @@ golden_df = google_engineered\
 .merge(dep_engineered, how='left', on=['lng', 'lat'])
 
 # Upload Golden DF
+new_l = []
+for c_name in list(golden_df.columns):
+    c_name = c_name.replace('-', '_')
+    c_name = c_name.replace(' ', '_')
+    new_l.append(c_name)
+golden_df.columns = new_l
+
 golden_df.to_csv('golden_df_trial_bigQuery.csv')
+upload_golden_df(district_string, golden_df)

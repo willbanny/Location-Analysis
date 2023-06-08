@@ -1,6 +1,5 @@
 import os
 import numpy as np
-
 ##################  VARIABLES  ##################
 GCP_PROJECT = os.environ.get("GCP_PROJECT")
 BQ_DATASET = os.environ.get("BQ_DATASET")
@@ -11,7 +10,6 @@ BQ_GOOGLE_TABLE = os.environ.get("BQ_GOOGLE_TABLE")
 BQ_CRIME_TABLE = os.environ.get("BQ_CRIME_TABLE")
 BQ_DEP_TABLE = os.environ.get("BQ_DEP_TABLE")
 BQ_GOLDEN_TABLE = os.environ.get("BQ_GOLDEN_TABLE")
-
 MASTER_COLUMN_NAMES_RAW = ["District",
     "HECTARES",
     "District_ID",
@@ -32,7 +30,6 @@ MASTER_DTYPES_RAW = {
     "Centroid_Lon": "float32",
     "Centroid_Lat": "float32"
 }
-
 GRID_COLUMN_NAMES_RAW = ["District",
     "Description",
     "GridName",
@@ -45,7 +42,6 @@ GRID_DTYPES_RAW = {
     "Longitude": "float32",
     "Latitude": "float32"
 }
-
 GOOGLE_COLUMN_NAMES_RAW = ["lat",
     "lng",
     "feature_name",
@@ -56,7 +52,6 @@ GOOGLE_DTYPES_RAW = {
     "feature_name": "object",
     "district": "object"
 }
-
 CRIME_COLUMN_NAMES_RAW = ["LSOA_ID",
     "LSOA_name",
     "Crime_type",
@@ -66,7 +61,6 @@ CRIME_COLUMN_NAMES_RAW = ["LSOA_ID",
     'Crime_ID',
     'District_Name',
     'District_ID']
-
 CRIME_DTYPES_RAW = {
     "LSOA_ID": "object",
     "LSOA_name": "object",
@@ -78,15 +72,13 @@ CRIME_DTYPES_RAW = {
     "District_Name": "object",
     "District_ID": "object"
 }
-
-
 DEP_COLUMN_NAMES_RAW = ["Local_Authority_District_code__2019_",
     "Local_Authority_District_name__2019_",
     "Index_of_Multiple_Deprivation__IMD__Score",
-    "Index_of_Multiple_Deprivation__IMD__Rank__where_1_is_most_deprived",
+    "Index_of_Multiple_Deprivation__IMD__Rank__where_1_is_most_deprived_",
     'Index_of_Multiple_Deprivation__IMD__Score',
-'    Index_of_Multiple_Deprivation__IMD__Rank__where__is_most_deprived_',
-    'Index_of_Multiple_Deprivation__IMD__Decile__where__is_most_deprived_0__of_LSOAs_',
+'    Index_of_Multiple_Deprivation__IMD__Rank__where_1_is_most_deprived_',
+    'Index_of_Multiple_Deprivation__IMD__Decile__where_1_is_most_deprived_10__of_LSOAs_',
     'Income_Score__rate_',
     'Income_Rank__where_1_is_most_deprived_',
     'Income_Decile__where_1_is_most_deprived_10__of_LSOAs_',
@@ -98,13 +90,13 @@ DEP_COLUMN_NAMES_RAW = ["Local_Authority_District_code__2019_",
     'Education__Skills_and_Training_Decile__where_1_is_most_deprived_10__of_LSOAs_',
     'Health_Deprivation_and_Disability_Score',
     'Health_Deprivation_and_Disability_Rank__where_1_is_most_deprived_',
-    'Health_Deprivation_and_Disability_Decile__where_1_is_most_deprived_0__of_LSOAs_',
+    'Health_Deprivation_and_Disability_Decile__where_1_is_most_deprived_10__of_LSOAs_',
     'Crime_Score',
     'Crime_Rank__where_1_is_most_deprived_',
     'Crime_Decile__where_1_is_most_deprived_10__of_LSOAs_',
     'Barriers_to_Housing_and_Services_Score',
     'Barriers_to_Housing_and_Services_Rank__where_1_is_most_deprived_',
-    'Barriers_to_Housing_and_Services_Decile__where_1_is_most_deprived_0__of_LSOAs_',
+    'Barriers_to_Housing_and_Services_Decile__where_1_is_most_deprived_10__of_LSOAs_',
     'Living_Environment_Score',
     'Living_Environment_Rank__where_1_is_most_deprived_',
     'Living_Environment_Decile__where_1_is_most_deprived_10__of_LSOAs_',
@@ -139,7 +131,6 @@ DEP_COLUMN_NAMES_RAW = ["Local_Authority_District_code__2019_",
     'Working_age_population_18_59_64__for_use_with_Employment_Deprivation_Domain__excluding_prisoners__',
     "longitude",
     "latitude"]
-
 DEP_DTYPES_RAW = {
     "Local_Authority_District_code__2019_": "object",
     "Local_Authority_District_name__2019_": "object",

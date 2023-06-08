@@ -1,101 +1,412 @@
-,District,Description,GridName,lng,lat,hospital_500,train_station_500,bus_station_500,park_500,place_of_worship_500,hospital_1000,train_station_1000,bus_station_1000,park_1000,place_of_worship_1000,hospital_1500,train_station_1500,bus_station_1500,park_1500,place_of_worship_1500
-0,City of Leicester (B),Unitary Authority,Grid2_0,-1.17888058182534,52.6870048114993,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-1,City of Leicester (B),Unitary Authority,Grid3_0,-1.16403772860992,52.6870048114993,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-2,City of Leicester (B),Unitary Authority,Grid5_0,-1.13435202217908,52.6870048114993,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-3,City of Leicester (B),Unitary Authority,Grid4_0,-1.1491948753945,52.6870048114993,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-4,City of Leicester (B),Unitary Authority,Grid2_1,-1.17888822478133,52.6780066099478,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-5,City of Leicester (B),Unitary Authority,Grid5_1,-1.13436883668226,52.6780066099478,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0
-6,City of Leicester (B),Unitary Authority,Grid3_1,-1.16404842874831,52.6780066099478,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-7,City of Leicester (B),Unitary Authority,Grid4_1,-1.14920863271528,52.6780066099478,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-8,City of Leicester (B),Unitary Authority,Grid2_2,-1.17889586367488,52.6690084083963,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-9,City of Leicester (B),Unitary Authority,Grid5_2,-1.13438564224807,52.6690084083963,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0
-10,City of Leicester (B),Unitary Authority,Grid3_2,-1.16405912319928,52.6690084083963,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-11,City of Leicester (B),Unitary Authority,Grid6_2,-1.11954890177246,52.6690084083963,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-12,City of Leicester (B),Unitary Authority,Grid4_2,-1.14922238272367,52.6690084083963,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-13,City of Leicester (B),Unitary Authority,Grid7_2,-1.10471216129686,52.6690084083963,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-14,City of Leicester (B),Unitary Authority,Grid8_2,-1.08987542082125,52.6690084083963,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-15,City of Leicester (B),Unitary Authority,Grid9_2,-1.07503868034565,52.6690084083963,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-16,City of Leicester (B),Unitary Authority,Grid10_2,-1.06020193987004,52.6690084083963,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-17,City of Leicester (B),Unitary Authority,Grid2_3,-1.17890349850888,52.6600102068448,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-18,City of Leicester (B),Unitary Authority,Grid4_3,-1.14923612542486,52.6600102068448,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0
-19,City of Leicester (B),Unitary Authority,Grid5_3,-1.13440243888285,52.6600102068448,0,0,0,0,0,0,2,0,2,0,0,0,0,8,0
-20,City of Leicester (B),Unitary Authority,Grid3_3,-1.16406981196687,52.6600102068448,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-21,City of Leicester (B),Unitary Authority,Grid7_3,-1.10473506579884,52.6600102068448,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0
-22,City of Leicester (B),Unitary Authority,Grid9_3,-1.07506769271482,52.6600102068448,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-23,City of Leicester (B),Unitary Authority,Grid8_3,-1.08990137925683,52.6600102068448,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-24,City of Leicester (B),Unitary Authority,Grid10_3,-1.06023400617281,52.6600102068448,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-25,City of Leicester (B),Unitary Authority,Grid6_3,-1.11956875234085,52.6600102068448,0,0,0,0,0,0,0,0,4,0,4,0,0,2,0
-26,City of Leicester (B),Unitary Authority,Grid1_4,-1.19374176351728,52.6510120052932,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-27,City of Leicester (B),Unitary Authority,Grid2_4,-1.1789111292862,52.6510120052932,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-28,City of Leicester (B),Unitary Authority,Grid3_4,-1.16408049505512,52.6510120052932,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-29,City of Leicester (B),Unitary Authority,Grid5_4,-1.13441922659296,52.6510120052932,0,0,0,4,0,0,0,0,8,0,2,0,28,6,8
-30,City of Leicester (B),Unitary Authority,Grid6_4,-1.11958859236188,52.6510120052932,4,0,0,2,0,0,0,0,6,0,0,0,2,8,2
-31,City of Leicester (B),Unitary Authority,Grid7_4,-1.1047579581308,52.6510120052932,0,0,0,0,0,0,0,4,6,0,0,0,2,4,0
-32,City of Leicester (B),Unitary Authority,Grid9_4,-1.07509668966864,52.6510120052932,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-33,City of Leicester (B),Unitary Authority,Grid8_4,-1.08992732389972,52.6510120052932,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0
-34,City of Leicester (B),Unitary Authority,Grid4_4,-1.14924986082404,52.6510120052932,0,0,0,2,0,4,0,2,0,0,0,0,0,8,2
-35,City of Leicester (B),Unitary Authority,Grid10_4,-1.06026605543756,52.6510120052932,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-36,City of Leicester (B),Unitary Authority,Grid11_4,-1.04543542120648,52.6510120052932,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-37,City of Leicester (B),Unitary Authority,Grid0_5,-1.20857392309306,52.6420138037417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-38,City of Leicester (B),Unitary Authority,Grid1_5,-1.19374633955139,52.6420138037417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-39,City of Leicester (B),Unitary Authority,Grid2_5,-1.17891875600972,52.6420138037417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-40,City of Leicester (B),Unitary Authority,Grid3_5,-1.16409117246806,52.6420138037417,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0
-41,City of Leicester (B),Unitary Authority,Grid5_5,-1.13443600538472,52.6420138037417,0,0,4,4,2,2,0,40,14,70,4,0,12,20,36
-42,City of Leicester (B),Unitary Authority,Grid4_5,-1.14926358892639,52.6420138037417,4,0,0,4,0,0,0,2,10,2,2,0,4,18,26
-43,City of Leicester (B),Unitary Authority,Grid6_5,-1.11960842184305,52.6420138037417,0,0,0,0,0,8,0,0,10,8,8,2,48,8,40
-44,City of Leicester (B),Unitary Authority,Grid8_5,-1.08995325475971,52.6420138037417,0,0,0,0,0,0,0,2,0,0,0,0,2,4,0
-45,City of Leicester (B),Unitary Authority,Grid7_5,-1.10478083830138,52.6420138037417,0,0,4,2,0,0,0,2,12,0,0,0,0,4,0
-46,City of Leicester (B),Unitary Authority,Grid9_5,-1.07512567121804,52.6420138037417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-47,City of Leicester (B),Unitary Authority,Grid11_5,-1.0454705041347,52.6420138037417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-48,City of Leicester (B),Unitary Authority,Grid0_6,-1.20857544762759,52.6330156021902,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-49,City of Leicester (B),Unitary Authority,Grid10_5,-1.06029808767637,52.6420138037417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-50,City of Leicester (B),Unitary Authority,Grid1_6,-1.19375091315496,52.6330156021902,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-51,City of Leicester (B),Unitary Authority,Grid2_6,-1.17892637868234,52.6330156021902,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-52,City of Leicester (B),Unitary Authority,Grid3_6,-1.16410184420971,52.6330156021902,0,0,0,0,0,0,0,0,0,0,2,0,0,4,0
-53,City of Leicester (B),Unitary Authority,Grid4_6,-1.14927730973709,52.6330156021902,0,0,0,4,0,4,0,0,26,2,10,0,4,12,36
-54,City of Leicester (B),Unitary Authority,Grid6_6,-1.11962824079184,52.6330156021902,4,0,0,2,6,10,2,12,16,20,0,0,38,22,28
-55,City of Leicester (B),Unitary Authority,Grid7_6,-1.10480370631921,52.6330156021902,0,0,0,6,0,0,0,0,4,0,0,0,6,6,0
-56,City of Leicester (B),Unitary Authority,Grid5_6,-1.13445277526446,52.6330156021902,0,0,6,8,50,10,0,50,18,52,10,2,8,30,14
-57,City of Leicester (B),Unitary Authority,Grid8_6,-1.08997917184659,52.6330156021902,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0
-58,City of Leicester (B),Unitary Authority,Grid9_6,-1.07515463737396,52.6330156021902,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-59,City of Leicester (B),Unitary Authority,Grid10_6,-1.06033010290134,52.6330156021902,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-60,City of Leicester (B),Unitary Authority,Grid11_6,-1.04550556842871,52.6330156021902,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-61,City of Leicester (B),Unitary Authority,Grid2_7,-1.17893399730691,52.6240174006386,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-62,City of Leicester (B),Unitary Authority,Grid1_7,-1.1937554843297,52.6240174006386,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-63,City of Leicester (B),Unitary Authority,Grid0_7,-1.2085769713525,52.6240174006386,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-64,City of Leicester (B),Unitary Authority,Grid3_7,-1.16411251028411,52.6240174006386,0,0,0,0,0,0,0,0,2,0,2,0,0,2,0
-65,City of Leicester (B),Unitary Authority,Grid4_7,-1.14929102326131,52.6240174006386,2,0,0,2,0,2,0,0,10,0,4,0,0,18,2
-66,City of Leicester (B),Unitary Authority,Grid5_7,-1.13446953623851,52.6240174006386,4,0,0,2,0,6,0,8,8,12,4,2,28,36,76
-67,City of Leicester (B),Unitary Authority,Grid7_7,-1.10482656219292,52.6240174006386,0,0,0,0,0,0,0,0,2,0,0,0,0,12,0
-68,City of Leicester (B),Unitary Authority,Grid8_7,-1.09000507517012,52.6240174006386,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-69,City of Leicester (B),Unitary Authority,Grid9_7,-1.07518358814733,52.6240174006386,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-70,City of Leicester (B),Unitary Authority,Grid10_7,-1.06036210112453,52.6240174006386,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-71,City of Leicester (B),Unitary Authority,Grid2_8,-1.17894161188631,52.6150191990871,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-72,City of Leicester (B),Unitary Authority,Grid6_7,-1.11964804921572,52.6240174006386,0,0,0,12,0,10,0,2,12,4,0,2,10,12,22
-73,City of Leicester (B),Unitary Authority,Grid4_8,-1.14930472950423,52.6150191990871,0,0,0,0,0,0,0,0,0,0,2,0,0,4,0
-74,City of Leicester (B),Unitary Authority,Grid5_8,-1.13448628831319,52.6150191990871,2,0,0,0,0,0,0,2,2,0,8,0,0,6,0
-75,City of Leicester (B),Unitary Authority,Grid7_8,-1.10484940593112,52.6150191990871,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0
-76,City of Leicester (B),Unitary Authority,Grid8_8,-1.09003096474008,52.6150191990871,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-77,City of Leicester (B),Unitary Authority,Grid6_8,-1.11966784712216,52.6150191990871,0,0,0,0,0,0,0,0,10,0,0,0,0,10,0
-78,City of Leicester (B),Unitary Authority,Grid10_8,-1.06039408235801,52.6150191990871,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-79,City of Leicester (B),Unitary Authority,Grid9_8,-1.07521252354904,52.6150191990871,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-80,City of Leicester (B),Unitary Authority,Grid3_9,-1.16413382544721,52.6060209975356,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-81,City of Leicester (B),Unitary Authority,Grid4_9,-1.14931842847101,52.6060209975356,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-82,City of Leicester (B),Unitary Authority,Grid8_9,-1.09005684056622,52.6060209975356,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-83,City of Leicester (B),Unitary Authority,Grid6_9,-1.11968763451861,52.6060209975356,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-84,City of Leicester (B),Unitary Authority,Grid7_9,-1.10487223754241,52.6060209975356,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-85,City of Leicester (B),Unitary Authority,Grid2_10,-1.17895682892107,52.597022795984,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-86,City of Leicester (B),Unitary Authority,Grid4_10,-1.1493321201668,52.597022795984,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-87,City of Leicester (B),Unitary Authority,Grid3_10,-1.16414447454394,52.597022795984,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-88,City of Leicester (B),Unitary Authority,Grid5_10,-1.13451976578967,52.597022795984,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-89,City of Leicester (B),Unitary Authority,Grid6_10,-1.11970741141254,52.597022795984,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-90,City of Leicester (B),Unitary Authority,Grid7_10,-1.10489505703541,52.597022795984,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-91,City of Leicester (B),Unitary Authority,Grid3_8,-1.16412317069527,52.6150191990871,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-92,City of Leicester (B),Unitary Authority,Grid5_9,-1.13450303149481,52.6060209975356,0,0,0,0,0,0,0,0,0,0,2,0,0,2,0
-93,City of Leicester (B),Unitary Authority,Grid3_11,-1.16415511798946,52.5880245944325,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-94,City of Leicester (B),Unitary Authority,Grid5_11,-1.13453649120407,52.5880245944325,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0
-95,City of Leicester (B),Unitary Authority,Grid6_11,-1.11972717781138,52.5880245944325,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-96,City of Leicester (B),Unitary Authority,Grid3_12,-1.1641657557878,52.579026392881,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-97,City of Leicester (B),Unitary Authority,Grid4_12,-1.14935948176605,52.579026392881,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-98,City of Leicester (B),Unitary Authority,Grid2_11,-1.17896443138216,52.5880245944325,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-99,City of Leicester (B),Unitary Authority,Grid4_11,-1.14934580459677,52.5880245944325,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+,District,Description,GridName,lng,lat,hospital_250,train_station_250,bus_station_250,park_250,place_of_worship_250,liquor_store_250,hospital_500,train_station_500,bus_station_500,park_500,place_of_worship_500,liquor_store_500,hospital_750,train_station_750,bus_station_750,park_750,place_of_worship_750,liquor_store_750
+0,Croydon London Boro,London Borough,Grid5_0,-0.122226000296422,51.420994839694,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,Croydon London Boro,London Borough,Grid6_0,-0.115011554294947,51.420994839694,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2,Croydon London Boro,London Borough,Grid7_0,-0.107797108293472,51.420994839694,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+3,Croydon London Boro,London Borough,Grid8_0,-0.100582662291996,51.420994839694,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4,Croydon London Boro,London Borough,Grid11_0,-0.0789393242875712,51.420994839694,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+5,Croydon London Boro,London Borough,Grid10_0,-0.0861537702890463,51.420994839694,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+6,Croydon London Boro,London Borough,Grid9_0,-0.0933682162905214,51.420994839694,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+7,Croydon London Boro,London Borough,Grid5_1,-0.122229905497771,51.4164957389183,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+8,Croydon London Boro,London Borough,Grid6_1,-0.115016169532905,51.4164957389183,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+9,Croydon London Boro,London Borough,Grid7_1,-0.107802433568039,51.4164957389183,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+10,Croydon London Boro,London Borough,Grid10_1,-0.0861612256734404,51.4164957389183,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+11,Croydon London Boro,London Borough,Grid11_1,-0.0789474897085743,51.4164957389183,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+12,Croydon London Boro,London Borough,Grid8_1,-0.100588697603173,51.4164957389183,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+13,Croydon London Boro,London Borough,Grid9_1,-0.0933749616383065,51.4164957389183,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14,Croydon London Boro,London Borough,Grid4_2,-0.12944683579839,51.4119966381425,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+15,Croydon London Boro,London Borough,Grid5_2,-0.122233809685913,51.4119966381425,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16,Croydon London Boro,London Borough,Grid7_2,-0.10780775746096,51.4119966381425,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+17,Croydon London Boro,London Borough,Grid6_2,-0.115020783573437,51.4119966381425,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18,Croydon London Boro,London Borough,Grid8_2,-0.100594731348483,51.4119966381425,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19,Croydon London Boro,London Borough,Grid9_2,-0.0933817052360068,51.4119966381425,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20,Croydon London Boro,London Borough,Grid10_2,-0.0861686791235302,51.4119966381425,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21,Croydon London Boro,London Borough,Grid12_2,-0.071742626898577,51.4119966381425,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0
+22,Croydon London Boro,London Borough,Grid11_2,-0.0789556530110537,51.4119966381425,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23,Croydon London Boro,London Borough,Grid4_3,-0.129450029305439,51.4074975373668,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24,Croydon London Boro,London Borough,Grid7_3,-0.107813079972709,51.4074975373668,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25,Croydon London Boro,London Borough,Grid5_3,-0.122237712861196,51.4074975373668,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+26,Croydon London Boro,London Borough,Grid6_3,-0.115025396416952,51.4074975373668,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+27,Croydon London Boro,London Borough,Grid8_3,-0.100600763528465,51.4074975373668,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+28,Croydon London Boro,London Borough,Grid9_3,-0.093388447084222,51.4074975373668,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29,Croydon London Boro,London Borough,Grid11_3,-0.0789638141957352,51.4074975373668,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+30,Croydon London Boro,London Borough,Grid10_3,-0.0861761306399786,51.4074975373668,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+31,Croydon London Boro,London Borough,Grid12_3,-0.0717514977514918,51.4074975373668,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+32,Croydon London Boro,London Borough,Grid4_4,-0.129453221984069,51.402998436591,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+33,Croydon London Boro,London Borough,Grid6_4,-0.115030008063862,51.402998436591,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+34,Croydon London Boro,London Borough,Grid5_4,-0.122241615023965,51.402998436591,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+35,Croydon London Boro,London Borough,Grid8_4,-0.100606794143655,51.402998436591,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+36,Croydon London Boro,London Borough,Grid7_4,-0.107818401103758,51.402998436591,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+37,Croydon London Boro,London Borough,Grid9_4,-0.0933951871835514,51.402998436591,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+38,Croydon London Boro,London Borough,Grid10_4,-0.086183580223448,51.402998436591,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+39,Croydon London Boro,London Borough,Grid13_4,-0.0645487593431375,51.402998436591,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+40,Croydon London Boro,London Borough,Grid12_4,-0.071760366303241,51.402998436591,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+41,Croydon London Boro,London Borough,Grid11_4,-0.0789719732633445,51.402998436591,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+42,Croydon London Boro,London Borough,Grid14_4,-0.057337152383034,51.402998436591,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+43,Croydon London Boro,London Borough,Grid15_4,-0.0501255454229306,51.402998436591,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0
+44,Croydon London Boro,London Borough,Grid5_5,-0.122245516174569,51.3984993358152,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+45,Croydon London Boro,London Borough,Grid4_5,-0.129456413834563,51.3984993358152,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+46,Croydon London Boro,London Borough,Grid6_5,-0.115034618514575,51.3984993358152,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+47,Croydon London Boro,London Borough,Grid7_5,-0.107823720854582,51.3984993358152,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+48,Croydon London Boro,London Borough,Grid8_5,-0.100612823194588,51.3984993358152,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+49,Croydon London Boro,London Borough,Grid9_5,-0.0934019255345944,51.3984993358152,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+50,Croydon London Boro,London Borough,Grid10_5,-0.0861910278746007,51.3984993358152,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+51,Croydon London Boro,London Borough,Grid11_5,-0.078980130214607,51.3984993358152,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+52,Croydon London Boro,London Borough,Grid12_5,-0.0717692325546133,51.3984993358152,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+53,Croydon London Boro,London Borough,Grid14_5,-0.0573474372346259,51.3984993358152,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+54,Croydon London Boro,London Borough,Grid13_5,-0.0645583348946196,51.3984993358152,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+55,Croydon London Boro,London Borough,Grid4_6,-0.129459604857205,51.3940002350395,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+56,Croydon London Boro,London Borough,Grid6_6,-0.115039227769503,51.3940002350395,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+57,Croydon London Boro,London Borough,Grid5_6,-0.122249416313354,51.3940002350395,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+58,Croydon London Boro,London Borough,Grid7_6,-0.107829039225652,51.3940002350395,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+59,Croydon London Boro,London Borough,Grid9_6,-0.0934086621379497,51.3940002350395,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+60,Croydon London Boro,London Borough,Grid8_6,-0.100618850681801,51.3940002350395,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+61,Croydon London Boro,London Borough,Grid10_6,-0.0861984735940987,51.3940002350395,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+62,Croydon London Boro,London Borough,Grid11_6,-0.0789882850502477,51.3940002350395,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+63,Croydon London Boro,London Borough,Grid12_6,-0.0717780965063967,51.3940002350395,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+64,Croydon London Boro,London Borough,Grid13_6,-0.0645679079625456,51.3940002350395,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+65,Croydon London Boro,London Borough,Grid15_6,-0.0501475308748436,51.3940002350395,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+66,Croydon London Boro,London Borough,Grid16_6,-0.0429373423309925,51.3940002350395,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+67,Croydon London Boro,London Borough,Grid14_6,-0.0573577194186946,51.3940002350395,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+68,Croydon London Boro,London Borough,Grid15_5,-0.0501365395746323,51.3984993358152,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+69,Croydon London Boro,London Borough,Grid3_7,-0.136672274663891,51.3895011342637,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+70,Croydon London Boro,London Borough,Grid4_7,-0.129462795052278,51.3895011342637,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+71,Croydon London Boro,London Borough,Grid5_7,-0.122253315440666,51.3895011342637,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+72,Croydon London Boro,London Borough,Grid6_7,-0.115043835829053,51.3895011342637,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+73,Croydon London Boro,London Borough,Grid7_7,-0.107834356217441,51.3895011342637,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+74,Croydon London Boro,London Borough,Grid8_7,-0.100624876605828,51.3895011342637,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+75,Croydon London Boro,London Borough,Grid10_7,-0.0862059173826035,51.3895011342637,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+76,Croydon London Boro,London Borough,Grid11_7,-0.0789964377709911,51.3895011342637,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+77,Croydon London Boro,London Borough,Grid12_7,-0.0717869581593786,51.3895011342637,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+78,Croydon London Boro,London Borough,Grid13_7,-0.0645774785477661,51.3895011342637,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+79,Croydon London Boro,London Borough,Grid14_7,-0.0573679989361536,51.3895011342637,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+80,Croydon London Boro,London Borough,Grid16_7,-0.0429490397129287,51.3895011342637,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+81,Croydon London Boro,London Borough,Grid15_7,-0.0501585193245412,51.3895011342637,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+82,Croydon London Boro,London Borough,Grid17_7,-0.0357395601013162,51.3895011342637,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+83,Croydon London Boro,London Borough,Grid4_8,-0.129465984420067,51.385002033488,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+84,Croydon London Boro,London Borough,Grid6_8,-0.115048442693637,51.385002033488,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+85,Croydon London Boro,London Borough,Grid5_8,-0.122257213556852,51.385002033488,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+86,Croydon London Boro,London Borough,Grid8_8,-0.100630900967207,51.385002033488,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+87,Croydon London Boro,London Borough,Grid7_8,-0.107839671830422,51.385002033488,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+88,Croydon London Boro,London Borough,Grid9_8,-0.0934221301039917,51.385002033488,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+89,Croydon London Boro,London Borough,Grid10_8,-0.0862133592407767,51.385002033488,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+90,Croydon London Boro,London Borough,Grid11_8,-0.0790045883775616,51.385002033488,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+91,Croydon London Boro,London Borough,Grid13_8,-0.0645870466511316,51.385002033488,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+92,Croydon London Boro,London Borough,Grid12_8,-0.0717958175143466,51.385002033488,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+93,Croydon London Boro,London Borough,Grid14_8,-0.0573782757879165,51.385002033488,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+94,Croydon London Boro,London Borough,Grid15_8,-0.0501695049247015,51.385002033488,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+95,Croydon London Boro,London Borough,Grid16_8,-0.0429607340614865,51.385002033488,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+96,Croydon London Boro,London Borough,Grid17_8,-0.0357519631982715,51.385002033488,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+97,Croydon London Boro,London Borough,Grid9_7,-0.093415396994216,51.3895011342637,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+98,Croydon London Boro,London Borough,Grid4_9,-0.129469172960854,51.3805029327122,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+99,Croydon London Boro,London Borough,Grid5_9,-0.122261110662258,51.3805029327122,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+100,Croydon London Boro,London Borough,Grid6_9,-0.115053048363662,51.3805029327122,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+101,Croydon London Boro,London Borough,Grid7_9,-0.107844986065066,51.3805029327122,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+102,Croydon London Boro,London Borough,Grid8_9,-0.10063692376647,51.3805029327122,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0
+103,Croydon London Boro,London Borough,Grid9_9,-0.0934288614678747,51.3805029327122,0,0,0,0,0,0,0,0,0,0,1,0,0,1,2,0,0,0
+104,Croydon London Boro,London Borough,Grid10_9,-0.0862207991692789,51.3805029327122,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+105,Croydon London Boro,London Borough,Grid11_9,-0.0790127368706831,51.3805029327122,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+106,Croydon London Boro,London Borough,Grid13_9,-0.0645966122734915,51.3805029327122,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+107,Croydon London Boro,London Borough,Grid12_9,-0.0718046745720873,51.3805029327122,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+108,Croydon London Boro,London Borough,Grid15_9,-0.0501804876763,51.3805029327122,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+109,Croydon London Boro,London Borough,Grid16_9,-0.0429724253777042,51.3805029327122,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+110,Croydon London Boro,London Borough,Grid14_9,-0.0573885499748958,51.3805029327122,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+111,Croydon London Boro,London Borough,Grid18_9,-0.0285563007805127,51.3805029327122,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+112,Croydon London Boro,London Borough,Grid17_9,-0.0357643630791085,51.3805029327122,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+113,Croydon London Boro,London Borough,Grid4_10,-0.129472360674922,51.3760038319364,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+114,Croydon London Boro,London Borough,Grid5_10,-0.12226500675723,51.3760038319364,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+115,Croydon London Boro,London Borough,Grid6_10,-0.115057652839538,51.3760038319364,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+116,Croydon London Boro,London Borough,Grid7_10,-0.107850298921846,51.3760038319364,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+117,Croydon London Boro,London Borough,Grid8_10,-0.100642945004155,51.3760038319364,0,0,0,0,0,0,0,1,0,1,2,0,3,0,1,3,6,0
+118,Croydon London Boro,London Borough,Grid9_10,-0.0934355910864628,51.3760038319364,0,1,2,0,0,0,0,0,0,2,4,0,2,0,0,3,2,0
+119,Croydon London Boro,London Borough,Grid10_10,-0.0862282371687711,51.3760038319364,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,1,0,0
+120,Croydon London Boro,London Borough,Grid11_10,-0.0790208832510793,51.3760038319364,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+121,Croydon London Boro,London Borough,Grid12_10,-0.0718135293333875,51.3760038319364,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+122,Croydon London Boro,London Borough,Grid13_10,-0.0646061754156958,51.3760038319364,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+123,Croydon London Boro,London Borough,Grid15_10,-0.0501914675803123,51.3760038319364,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+124,Croydon London Boro,London Borough,Grid16_10,-0.0429841136626205,51.3760038319364,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+125,Croydon London Boro,London Borough,Grid19_10,-0.0213620519095453,51.3760038319364,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+126,Croydon London Boro,London Borough,Grid17_10,-0.0357767597449288,51.3760038319364,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+127,Croydon London Boro,London Borough,Grid18_10,-0.028569405827237,51.3760038319364,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+128,Croydon London Boro,London Borough,Grid5_11,-0.122268901842114,51.3715047311607,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+129,Croydon London Boro,London Borough,Grid6_11,-0.115062256121674,51.3715047311607,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0
+130,Croydon London Boro,London Borough,Grid7_11,-0.107855610401234,51.3715047311607,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0
+131,Croydon London Boro,London Borough,Grid8_11,-0.100648964680794,51.3715047311607,2,0,1,1,5,0,1,0,0,1,2,1,1,0,0,5,9,1
+132,Croydon London Boro,London Borough,Grid10_11,-0.0862356732399137,51.3715047311607,0,0,0,0,0,0,0,0,0,1,0,0,0,0,2,2,2,0
+133,Croydon London Boro,London Borough,Grid14_10,-0.0573988214980041,51.3760038319364,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+134,Croydon London Boro,London Borough,Grid9_11,-0.0934423189603537,51.3715047311607,2,0,0,2,2,0,0,1,2,4,3,0,3,0,0,1,7,1
+135,Croydon London Boro,London Borough,Grid11_11,-0.0790290275194735,51.3715047311607,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+136,Croydon London Boro,London Borough,Grid12_11,-0.0718223817990335,51.3715047311607,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,2,0,0
+137,Croydon London Boro,London Borough,Grid14_11,-0.0574090903581533,51.3715047311607,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+138,Croydon London Boro,London Borough,Grid15_11,-0.0502024446377132,51.3715047311607,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+139,Croydon London Boro,London Borough,Grid16_11,-0.0429957989172731,51.3715047311607,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+140,Croydon London Boro,London Borough,Grid17_11,-0.0357891531968331,51.3715047311607,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+141,Croydon London Boro,London Borough,Grid19_11,-0.0213758617559529,51.3715047311607,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+142,Croydon London Boro,London Borough,Grid18_11,-0.028582507476393,51.3715047311607,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+143,Croydon London Boro,London Borough,Grid13_11,-0.0646157360785934,51.3715047311607,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+144,Croydon London Boro,London Borough,Grid5_12,-0.122272795917256,51.3670056303849,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+145,Croydon London Boro,London Borough,Grid6_12,-0.115066858210478,51.3670056303849,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+146,Croydon London Boro,London Borough,Grid7_12,-0.1078609205037,51.3670056303849,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+147,Croydon London Boro,London Borough,Grid8_12,-0.100654982796922,51.3670056303849,0,0,0,1,7,0,3,0,3,2,7,2,0,0,1,2,10,0
+148,Croydon London Boro,London Borough,Grid9_12,-0.0934490450901443,51.3670056303849,0,0,0,1,0,0,2,1,0,3,8,0,3,0,3,5,18,2
+149,Croydon London Boro,London Borough,Grid10_12,-0.0862431073833664,51.3670056303849,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,4,1,0
+150,Croydon London Boro,London Borough,Grid11_12,-0.0790371696765885,51.3670056303849,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0
+151,Croydon London Boro,London Borough,Grid12_12,-0.0718312319698106,51.3670056303849,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+152,Croydon London Boro,London Borough,Grid13_12,-0.0646252942630327,51.3670056303849,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,4,0,0
+153,Croydon London Boro,London Borough,Grid14_12,-0.0574193565562548,51.3670056303849,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0
+154,Croydon London Boro,London Borough,Grid15_12,-0.0502134188494769,51.3670056303849,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+155,Croydon London Boro,London Borough,Grid16_12,-0.043007481142699,51.3670056303849,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+156,Croydon London Boro,London Borough,Grid17_12,-0.035801543435921,51.3670056303849,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+157,Croydon London Boro,London Borough,Grid19_12,-0.0213896680223652,51.3670056303849,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+158,Croydon London Boro,London Borough,Grid18_12,-0.0285956057291431,51.3670056303849,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+159,Croydon London Boro,London Borough,Grid5_13,-0.122276688983001,51.3625065296092,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+160,Croydon London Boro,London Borough,Grid6_13,-0.115071459106359,51.3625065296092,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,5,0
+161,Croydon London Boro,London Borough,Grid7_13,-0.107866229229716,51.3625065296092,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+162,Croydon London Boro,London Borough,Grid9_13,-0.0934557694764316,51.3625065296092,0,1,0,1,2,0,0,0,0,0,9,0,0,0,3,4,10,1
+163,Croydon London Boro,London Borough,Grid8_13,-0.100660999353074,51.3625065296092,0,0,0,0,1,0,0,0,3,2,14,1,0,0,0,1,11,1
+164,Croydon London Boro,London Borough,Grid10_13,-0.0862505395997892,51.3625065296092,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,2,0
+165,Croydon London Boro,London Borough,Grid11_13,-0.0790453097231468,51.3625065296092,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+166,Croydon London Boro,London Borough,Grid13_13,-0.064634849969862,51.3625065296092,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,2,1,0
+167,Croydon London Boro,London Borough,Grid12_13,-0.0718400798465044,51.3625065296092,0,0,0,0,1,0,0,0,0,3,0,0,0,0,0,1,0,0
+168,Croydon London Boro,London Borough,Grid14_13,-0.0574296200932196,51.3625065296092,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,4,0,0
+169,Croydon London Boro,London Borough,Grid15_13,-0.0502243902165772,51.3625065296092,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+170,Croydon London Boro,London Borough,Grid17_13,-0.0358139304632924,51.3625065296092,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+171,Croydon London Boro,London Borough,Grid19_13,-0.0214034707100076,51.3625065296092,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+172,Croydon London Boro,London Borough,Grid20_13,-0.0141982408333652,51.3625065296092,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+173,Croydon London Boro,London Borough,Grid18_13,-0.02860870058665,51.3625065296092,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+174,Croydon London Boro,London Borough,Grid16_13,-0.0430191603399348,51.3625065296092,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+175,Croydon London Boro,London Borough,Grid5_14,-0.122280581039695,51.3580074288334,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0
+176,Croydon London Boro,London Borough,Grid6_14,-0.115076058809725,51.3580074288334,0,0,0,0,4,0,0,0,0,1,2,0,0,0,0,0,0,0
+177,Croydon London Boro,London Borough,Grid10_14,-0.0862579698898419,51.3580074288334,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+178,Croydon London Boro,London Borough,Grid9_14,-0.0934624921198126,51.3580074288334,0,0,0,0,2,0,0,0,0,0,3,0,0,1,0,2,10,1
+179,Croydon London Boro,London Borough,Grid8_14,-0.100667014349783,51.3580074288334,0,0,0,0,0,0,0,0,0,0,7,0,0,0,3,1,10,1
+180,Croydon London Boro,London Borough,Grid7_14,-0.107871536579754,51.3580074288334,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,3,0
+181,Croydon London Boro,London Borough,Grid11_14,-0.0790534476598711,51.3580074288334,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0
+182,Croydon London Boro,London Borough,Grid13_14,-0.0646444031999297,51.3580074288334,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,1,0
+183,Croydon London Boro,London Borough,Grid15_14,-0.0502353587399882,51.3580074288334,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0
+184,Croydon London Boro,London Borough,Grid16_14,-0.0430308365100174,51.3580074288334,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+185,Croydon London Boro,London Borough,Grid18_14,-0.028621792050076,51.3580074288334,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+186,Croydon London Boro,London Borough,Grid17_14,-0.0358263142800467,51.3580074288334,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+187,Croydon London Boro,London Borough,Grid20_14,-0.0142127475901345,51.3580074288334,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+188,Croydon London Boro,London Borough,Grid12_14,-0.0718489254299004,51.3580074288334,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0
+189,Croydon London Boro,London Borough,Grid21_14,-0.00700822536016379,51.3580074288334,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+190,Croydon London Boro,London Borough,Grid19_14,-0.0214172698201053,51.3580074288334,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+191,Croydon London Boro,London Borough,Grid6_15,-0.115080657320984,51.3535083280576,0,0,0,0,0,0,0,0,0,1,6,0,0,0,0,0,1,0
+192,Croydon London Boro,London Borough,Grid5_15,-0.122284472087684,51.3535083280576,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0
+193,Croydon London Boro,London Borough,Grid8_15,-0.100673027787583,51.3535083280576,0,0,0,0,1,0,0,0,1,1,5,1,0,1,1,1,4,1
+194,Croydon London Boro,London Borough,Grid7_15,-0.107876842554283,51.3535083280576,0,0,0,0,1,0,0,0,0,2,0,0,0,0,0,0,1,0
+195,Croydon London Boro,London Borough,Grid9_15,-0.0934692130208831,51.3535083280576,0,0,0,0,2,1,0,0,0,0,1,0,0,1,0,1,5,1
+196,Croydon London Boro,London Borough,Grid10_15,-0.086265398254183,51.3535083280576,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,2,0,0
+197,Croydon London Boro,London Borough,Grid11_15,-0.0790615834874829,51.3535083280576,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+198,Croydon London Boro,London Borough,Grid12_15,-0.0718577687207827,51.3535083280576,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+199,Croydon London Boro,London Borough,Grid14_15,-0.0574501391873824,51.3535083280576,0,0,0,1,0,0,0,0,0,3,1,0,0,0,0,1,0,0
+200,Croydon London Boro,London Borough,Grid13_15,-0.0646539539540826,51.3535083280576,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,2,0,0
+201,Croydon London Boro,London Borough,Grid15_15,-0.0502463244206823,51.3535083280576,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+202,Croydon London Boro,London Borough,Grid16_15,-0.0430425096539822,51.3535083280576,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+203,Croydon London Boro,London Borough,Grid17_15,-0.035838694887282,51.3535083280576,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+204,Croydon London Boro,London Borough,Grid18_15,-0.0286348801205819,51.3535083280576,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+205,Croydon London Boro,London Borough,Grid19_15,-0.0214310653538817,51.3535083280576,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+206,Croydon London Boro,London Borough,Grid21_15,-0.00702343582048146,51.3535083280576,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+207,Croydon London Boro,London Borough,Grid20_15,-0.0142272505871816,51.3535083280576,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+208,Croydon London Boro,London Borough,Grid4_16,-0.129491469614079,51.3490092272819,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+209,Croydon London Boro,London Borough,Grid6_16,-0.115085254640543,51.3490092272819,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,1,0
+210,Croydon London Boro,London Borough,Grid14_14,-0.0574398809699589,51.3580074288334,0,0,0,2,0,0,0,0,0,2,0,0,0,0,0,1,1,0
+211,Croydon London Boro,London Borough,Grid8_16,-0.100679039667008,51.3490092272819,0,0,2,0,5,0,0,1,0,1,0,1,0,0,0,1,2,0
+212,Croydon London Boro,London Borough,Grid7_16,-0.107882147153775,51.3490092272819,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,4,0
+213,Croydon London Boro,London Borough,Grid9_16,-0.0934759321802397,51.3490092272819,0,1,0,0,0,0,0,0,0,1,2,1,0,1,1,2,3,1
+214,Croydon London Boro,London Borough,Grid11_16,-0.079069717206704,51.3490092272819,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+215,Croydon London Boro,London Borough,Grid12_16,-0.0718666097199361,51.3490092272819,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+216,Croydon London Boro,London Borough,Grid13_16,-0.0646635022331682,51.3490092272819,0,0,0,0,0,0,1,0,0,2,0,0,0,0,0,0,1,1
+217,Croydon London Boro,London Borough,Grid14_16,-0.0574603947464003,51.3490092272819,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,1
+218,Croydon London Boro,London Borough,Grid15_16,-0.0502572872596325,51.3490092272819,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+219,Croydon London Boro,London Borough,Grid16_16,-0.0430541797728646,51.3490092272819,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+220,Croydon London Boro,London Borough,Grid17_16,-0.0358510722860967,51.3490092272819,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+221,Croydon London Boro,London Borough,Grid18_16,-0.0286479647993288,51.3490092272819,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+222,Croydon London Boro,London Borough,Grid21_16,-0.00703864233902523,51.3490092272819,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+223,Croydon London Boro,London Borough,Grid19_16,-0.021444857312561,51.3490092272819,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+224,Croydon London Boro,London Borough,Grid20_16,-0.0142417498257931,51.3490092272819,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+225,Croydon London Boro,London Borough,Grid3_17,-0.136697051939145,51.3445101265061,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+226,Croydon London Boro,London Borough,Grid4_17,-0.129494651549034,51.3445101265061,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+227,Croydon London Boro,London Borough,Grid5_17,-0.122292251158923,51.3445101265061,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+228,Croydon London Boro,London Borough,Grid6_17,-0.115089850768812,51.3445101265061,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+229,Croydon London Boro,London Borough,Grid7_17,-0.1078874503787,51.3445101265061,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,0
+230,Croydon London Boro,London Borough,Grid8_17,-0.100685049988589,51.3445101265061,0,0,0,0,0,0,0,1,1,0,1,0,0,0,1,1,4,0
+231,Croydon London Boro,London Borough,Grid9_17,-0.0934826495984779,51.3445101265061,0,0,0,2,0,0,0,1,0,1,0,0,0,1,0,1,0,0
+232,Croydon London Boro,London Borough,Grid10_17,-0.0862802492083667,51.3445101265061,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+233,Croydon London Boro,London Borough,Grid11_17,-0.0790778488182555,51.3445101265061,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+234,Croydon London Boro,London Borough,Grid12_17,-0.0718754484281443,51.3445101265061,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0
+235,Croydon London Boro,London Borough,Grid13_17,-0.064673048038033,51.3445101265061,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0
+236,Croydon London Boro,London Borough,Grid15_17,-0.0502682472578106,51.3445101265061,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+237,Croydon London Boro,London Borough,Grid14_17,-0.0574706476479218,51.3445101265061,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+238,Croydon London Boro,London Borough,Grid16_17,-0.0430658468676994,51.3445101265061,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+239,Croydon London Boro,London Borough,Grid17_17,-0.0358634464775882,51.3445101265061,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+240,Croydon London Boro,London Borough,Grid18_17,-0.0286610460874769,51.3445101265061,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+241,Croydon London Boro,London Borough,Grid19_17,-0.0214586456973657,51.3445101265061,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+242,Croydon London Boro,London Borough,Grid20_17,-0.0142562453072545,51.3445101265061,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+243,Croydon London Boro,London Borough,Grid22_17,0.000148555472967942,51.3445101265061,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+244,Croydon London Boro,London Borough,Grid21_17,-0.00705384491714328,51.3445101265061,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+245,Croydon London Boro,London Borough,Grid10_16,-0.0862728246934719,51.3490092272819,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+246,Croydon London Boro,London Borough,Grid2_18,-0.143901219612866,51.3400110257304,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+247,Croydon London Boro,London Borough,Grid1_18,-0.151102913089533,51.3400110257304,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+248,Croydon London Boro,London Borough,Grid3_18,-0.136699526136198,51.3400110257304,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+249,Croydon London Boro,London Borough,Grid4_18,-0.129497832659531,51.3400110257304,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+250,Croydon London Boro,London Borough,Grid5_18,-0.122296139182863,51.3400110257304,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+251,Croydon London Boro,London Borough,Grid7_18,-0.107892752229528,51.3400110257304,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0
+252,Croydon London Boro,London Borough,Grid8_18,-0.100691058752861,51.3400110257304,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+253,Croydon London Boro,London Borough,Grid9_18,-0.0934893652761933,51.3400110257304,0,0,0,1,0,0,0,0,0,2,0,0,0,0,0,0,0,0
+254,Croydon London Boro,London Borough,Grid11_18,-0.0790859783228583,51.3400110257304,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+255,Croydon London Boro,London Borough,Grid10_18,-0.0862876717995258,51.3400110257304,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+256,Croydon London Boro,London Borough,Grid12_18,-0.0718842848461908,51.3400110257304,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+257,Croydon London Boro,London Borough,Grid13_18,-0.0646825913695233,51.3400110257304,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1
+258,Croydon London Boro,London Borough,Grid14_18,-0.0574808978928558,51.3400110257304,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+259,Croydon London Boro,London Borough,Grid15_18,-0.0502792044161884,51.3400110257304,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+260,Croydon London Boro,London Borough,Grid17_18,-0.0358758174628534,51.3400110257304,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+261,Croydon London Boro,London Borough,Grid16_18,-0.0430775109395209,51.3400110257304,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+262,Croydon London Boro,London Borough,Grid2_17,-0.143899452329256,51.3445101265061,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+263,Croydon London Boro,London Borough,Grid18_18,-0.0286741239861859,51.3400110257304,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+264,Croydon London Boro,London Borough,Grid19_18,-0.0214724305095184,51.3400110257304,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+265,Croydon London Boro,London Borough,Grid6_18,-0.115094445706196,51.3400110257304,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0
+266,Croydon London Boro,London Borough,Grid20_18,-0.0142707370328509,51.3400110257304,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+267,Croydon London Boro,London Borough,Grid21_18,-0.0070690435561834,51.3400110257304,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+268,Croydon London Boro,London Borough,Grid3_19,-0.136701999692225,51.3355119249546,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+269,Croydon London Boro,London Borough,Grid4_19,-0.129501012945851,51.3355119249546,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+270,Croydon London Boro,London Borough,Grid5_19,-0.122300026199477,51.3355119249546,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+271,Croydon London Boro,London Borough,Grid6_19,-0.115099039453103,51.3355119249546,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+272,Croydon London Boro,London Borough,Grid8_19,-0.100697065960355,51.3355119249546,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+273,Croydon London Boro,London Borough,Grid7_19,-0.107898052706729,51.3355119249546,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
+274,Croydon London Boro,London Borough,Grid9_19,-0.0934960792139812,51.3355119249546,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0
+275,Croydon London Boro,London Borough,Grid11_19,-0.0790941057212331,51.3355119249546,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+276,Croydon London Boro,London Borough,Grid10_19,-0.0862950924676072,51.3355119249546,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+277,Croydon London Boro,London Borough,Grid12_19,-0.0718931189748591,51.3355119249546,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+278,Croydon London Boro,London Borough,Grid13_19,-0.0646921322284851,51.3355119249546,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+279,Croydon London Boro,London Borough,Grid15_19,-0.050290158735737,51.3355119249546,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+280,Croydon London Boro,London Borough,Grid14_19,-0.0574911454821111,51.3355119249546,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+281,Croydon London Boro,London Borough,Grid16_19,-0.043089171989363,51.3355119249546,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+282,Croydon London Boro,London Borough,Grid19_19,-0.0214862117502409,51.3355119249546,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+283,Croydon London Boro,London Borough,Grid17_19,-0.035888185242989,51.3355119249546,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+284,Croydon London Boro,London Borough,Grid18_19,-0.028687198496615,51.3355119249546,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+285,Croydon London Boro,London Borough,Grid20_19,-0.0142852250038669,51.3355119249546,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+286,Croydon London Boro,London Borough,Grid21_19,-0.00708423825749288,51.3355119249546,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+287,Croydon London Boro,London Borough,Grid1_20,-0.151105033005782,51.3310128241788,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+288,Croydon London Boro,London Borough,Grid2_20,-0.143904752806614,51.3310128241788,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+289,Croydon London Boro,London Borough,Grid3_20,-0.136704472607446,51.3310128241788,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+290,Croydon London Boro,London Borough,Grid4_20,-0.129504192408278,51.3310128241788,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+291,Croydon London Boro,London Borough,Grid22_18,0.000132649920484089,51.3400110257304,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+292,Croydon London Boro,London Borough,Grid5_20,-0.122303912209109,51.3310128241788,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+293,Croydon London Boro,London Borough,Grid6_20,-0.115103632009941,51.3310128241788,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+294,Croydon London Boro,London Borough,Grid8_20,-0.100703071611605,51.3310128241788,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+295,Croydon London Boro,London Borough,Grid7_20,-0.107903351810773,51.3310128241788,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+296,Croydon London Boro,London Borough,Grid10_20,-0.0863025112132683,51.3310128241788,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+297,Croydon London Boro,London Borough,Grid11_20,-0.0791022310141001,51.3310128241788,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+298,Croydon London Boro,London Borough,Grid12_20,-0.0719019508149319,51.3310128241788,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+299,Croydon London Boro,London Borough,Grid13_20,-0.0647016706157637,51.3310128241788,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+300,Croydon London Boro,London Borough,Grid2_19,-0.143902986438599,51.3355119249546,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+301,Croydon London Boro,London Borough,Grid14_20,-0.0575013904165955,51.3310128241788,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+302,Croydon London Boro,London Borough,Grid15_20,-0.0503011102174273,51.3310128241788,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+303,Croydon London Boro,London Borough,Grid20_20,-0.0142997092215863,51.3310128241788,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+304,Croydon London Boro,London Borough,Grid19_20,-0.0214999894207545,51.3310128241788,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+305,Croydon London Boro,London Borough,Grid22_20,0.000100851176750069,51.3310128241788,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+306,Croydon London Boro,London Borough,Grid21_20,-0.00709942902241813,51.3310128241788,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+307,Croydon London Boro,London Borough,Grid1_21,-0.151106092552053,51.3265137234031,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+308,Croydon London Boro,London Borough,Grid2_21,-0.143906518717066,51.3265137234031,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+309,Croydon London Boro,London Borough,Grid3_21,-0.136706944882079,51.3265137234031,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+310,Croydon London Boro,London Borough,Grid4_21,-0.129507371047091,51.3265137234031,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+311,Croydon London Boro,London Borough,Grid5_21,-0.122307797212104,51.3265137234031,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+312,Croydon London Boro,London Borough,Grid9_20,-0.0935027914124365,51.3310128241788,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+313,Croydon London Boro,London Borough,Grid6_21,-0.115108223377116,51.3265137234031,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+314,Croydon London Boro,London Borough,Grid7_21,-0.107908649542129,51.3265137234031,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+315,Croydon London Boro,London Borough,Grid9_21,-0.0935095018721541,51.3265137234031,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+316,Croydon London Boro,London Borough,Grid8_21,-0.100709075707142,51.3265137234031,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+317,Croydon London Boro,London Borough,Grid10_21,-0.0863099280371667,51.3265137234031,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+318,Croydon London Boro,London Borough,Grid12_21,-0.0719107803671919,51.3265137234031,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+319,Croydon London Boro,London Borough,Grid14_21,-0.0575116326972171,51.3265137234031,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+320,Croydon London Boro,London Borough,Grid13_21,-0.0647112065322045,51.3265137234031,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+321,Croydon London Boro,London Borough,Grid11_21,-0.0791103542021793,51.3265137234031,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+322,Croydon London Boro,London Borough,Grid15_21,-0.0503120588622296,51.3265137234031,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+323,Croydon London Boro,London Borough,Grid0_22,-0.15830601947765,51.3220146226273,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+324,Croydon London Boro,London Borough,Grid2_22,-0.143908284170112,51.3220146226273,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+325,Croydon London Boro,London Borough,Grid3_22,-0.136709416516343,51.3220146226273,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+326,Croydon London Boro,London Borough,Grid5_22,-0.122311681208804,51.3220146226273,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+327,Croydon London Boro,London Borough,Grid4_22,-0.129510548862574,51.3220146226273,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+328,Croydon London Boro,London Borough,Grid7_22,-0.107913945901266,51.3220146226273,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+329,Croydon London Boro,London Borough,Grid6_22,-0.115112813555035,51.3220146226273,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+330,Croydon London Boro,London Borough,Grid8_22,-0.100715078247497,51.3220146226273,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+331,Croydon London Boro,London Borough,Grid1_22,-0.151107151823881,51.3220146226273,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+332,Croydon London Boro,London Borough,Grid11_22,-0.0791184752861899,51.3220146226273,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+333,Croydon London Boro,London Borough,Grid9_22,-0.0935162105937281,51.3220146226273,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+334,Croydon London Boro,London Borough,Grid12_22,-0.0719196076324208,51.3220146226273,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+335,Croydon London Boro,London Borough,Grid14_22,-0.0575218723248826,51.3220146226273,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+336,Croydon London Boro,London Borough,Grid10_22,-0.086317342939959,51.3220146226273,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+337,Croydon London Boro,London Borough,Grid13_22,-0.0647207399786517,51.3220146226273,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+338,Croydon London Boro,London Borough,Grid15_22,-0.0503230046711136,51.3220146226273,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+339,Croydon London Boro,London Borough,Grid0_23,-0.158306372476809,51.3175155218516,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+340,Croydon London Boro,London Borough,Grid2_23,-0.143910049165908,51.3175155218516,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+341,Croydon London Boro,London Borough,Grid5_23,-0.122315564199556,51.3175155218516,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+342,Croydon London Boro,London Borough,Grid1_23,-0.151108210821358,51.3175155218516,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+343,Croydon London Boro,London Borough,Grid4_23,-0.129513725855006,51.3175155218516,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+344,Croydon London Boro,London Borough,Grid3_23,-0.136711887510457,51.3175155218516,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+345,Croydon London Boro,London Borough,Grid6_23,-0.115117402544105,51.3175155218516,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+346,Croydon London Boro,London Borough,Grid7_23,-0.107919240888654,51.3175155218516,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+347,Croydon London Boro,London Borough,Grid9_23,-0.0935229175777528,51.3175155218516,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+348,Croydon London Boro,London Borough,Grid22_19,0.000116748488881151,51.3355119249546,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+349,Croydon London Boro,London Borough,Grid11_23,-0.0791265942668514,51.3175155218516,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+350,Croydon London Boro,London Borough,Grid12_23,-0.0719284326114007,51.3175155218516,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+351,Croydon London Boro,London Borough,Grid13_23,-0.06473027095595,51.3175155218516,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+352,Croydon London Boro,London Borough,Grid0_24,-0.15830672538455,51.3130164210758,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+353,Croydon London Boro,London Borough,Grid1_24,-0.15110926954458,51.3130164210758,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+354,Croydon London Boro,London Borough,Grid2_24,-0.14391181370461,51.3130164210758,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+355,Croydon London Boro,London Borough,Grid3_24,-0.13671435786464,51.3130164210758,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+356,Croydon London Boro,London Borough,Grid4_24,-0.129516902024671,51.3130164210758,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+357,Croydon London Boro,London Borough,Grid5_24,-0.122319446184701,51.3130164210758,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+358,Croydon London Boro,London Borough,Grid6_24,-0.115121990344731,51.3130164210758,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+359,Croydon London Boro,London Borough,Grid8_24,-0.100727078664792,51.3130164210758,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+360,Croydon London Boro,London Borough,Grid7_24,-0.107924534504762,51.3130164210758,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+361,Croydon London Boro,London Borough,Grid9_24,-0.0935296228248221,51.3130164210758,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+362,Croydon London Boro,London Borough,Grid10_24,-0.0863321669848524,51.3130164210758,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+363,Croydon London Boro,London Borough,Grid11_24,-0.0791347111448826,51.3130164210758,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+364,Croydon London Boro,London Borough,Grid0_25,-0.158307078200903,51.3085173203,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+365,Croydon London Boro,London Borough,Grid1_25,-0.151110327993639,51.3085173203,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+366,Croydon London Boro,London Borough,Grid2_25,-0.143913577786375,51.3085173203,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+367,Croydon London Boro,London Borough,Grid4_25,-0.129520077371848,51.3085173203,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+368,Croydon London Boro,London Borough,Grid3_25,-0.136716827579112,51.3085173203,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+369,Croydon London Boro,London Borough,Grid6_25,-0.115126576957321,51.3085173203,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+370,Croydon London Boro,London Borough,Grid5_25,-0.122323327164584,51.3085173203,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+371,Croydon London Boro,London Borough,Grid7_25,-0.107929826750057,51.3085173203,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+372,Croydon London Boro,London Borough,Grid8_25,-0.100733076542793,51.3085173203,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+373,Croydon London Boro,London Borough,Grid9_25,-0.0935363263355295,51.3085173203,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+374,Croydon London Boro,London Borough,Grid11_25,-0.0791428259210022,51.3085173203,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+375,Croydon London Boro,London Borough,Grid8_23,-0.100721079233204,51.3175155218516,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+376,Croydon London Boro,London Borough,Grid10_23,-0.0863247559223021,51.3175155218516,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+377,Croydon London Boro,London Borough,Grid0_26,-0.158307430925899,51.3040182195243,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+378,Croydon London Boro,London Borough,Grid2_26,-0.143915341411359,51.3040182195243,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+379,Croydon London Boro,London Borough,Grid4_26,-0.129523251896819,51.3040182195243,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+380,Croydon London Boro,London Borough,Grid3_26,-0.136719296654089,51.3040182195243,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+381,Croydon London Boro,London Borough,Grid5_26,-0.122327207139549,51.3040182195243,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+382,Croydon London Boro,London Borough,Grid6_26,-0.115131162382279,51.3040182195243,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+383,Croydon London Boro,London Borough,Grid7_26,-0.107935117625009,51.3040182195243,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+384,Croydon London Boro,London Borough,Grid9_26,-0.0935430281104683,51.3040182195243,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+385,Croydon London Boro,London Borough,Grid8_26,-0.100739072867738,51.3040182195243,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+386,Croydon London Boro,London Borough,Grid10_26,-0.0863469833531982,51.3040182195243,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+387,Croydon London Boro,London Borough,Grid2_27,-0.143917104579718,51.2995191187485,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+388,Croydon London Boro,London Borough,Grid1_27,-0.151112444069645,51.2995191187485,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+389,Croydon London Boro,London Borough,Grid3_27,-0.136721765089791,51.2995191187485,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+390,Croydon London Boro,London Borough,Grid0_27,-0.158307783559571,51.2995191187485,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+391,Croydon London Boro,London Borough,Grid1_26,-0.151111386168629,51.3040182195243,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+392,Croydon London Boro,London Borough,Grid4_27,-0.129526425599865,51.2995191187485,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+393,Croydon London Boro,London Borough,Grid10_25,-0.0863395761282659,51.3085173203,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+394,Croydon London Boro,London Borough,Grid5_27,-0.122331086109938,51.2995191187485,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+395,Croydon London Boro,London Borough,Grid7_27,-0.107940407130085,51.2995191187485,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+396,Croydon London Boro,London Borough,Grid8_27,-0.100745067640158,51.2995191187485,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+397,Croydon London Boro,London Borough,Grid9_27,-0.0935497281502316,51.2995191187485,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+398,Croydon London Boro,London Borough,Grid6_27,-0.115135746620011,51.2995191187485,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+399,Croydon London Boro,London Borough,Grid3_28,-0.136724232886437,51.2950200179728,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+400,Croydon London Boro,London Borough,Grid4_28,-0.129529598481266,51.2950200179728,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+401,Croydon London Boro,London Borough,Grid5_28,-0.122334964076095,51.2950200179728,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+402,Croydon London Boro,London Borough,Grid6_28,-0.115140329670924,51.2950200179728,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+403,Croydon London Boro,London Borough,Grid7_28,-0.107945695265754,51.2950200179728,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+404,Croydon London Boro,London Borough,Grid8_28,-0.100751060860583,51.2950200179728,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+405,Croydon London Boro,London Borough,Grid4_29,-0.129532770541303,51.290520917197,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+406,Croydon London Boro,London Borough,Grid5_29,-0.122338841038363,51.290520917197,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+407,Croydon London Boro,London Borough,Grid6_29,-0.115144911535423,51.290520917197,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+408,Croydon London Boro,London Borough,Grid7_29,-0.107950982032483,51.290520917197,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+409,Croydon London Boro,London Borough,Grid5_30,-0.122342716997085,51.2860218164212,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+410,Croydon London Boro,London Borough,Grid6_30,-0.115149492213912,51.2860218164212,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
