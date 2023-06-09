@@ -163,7 +163,7 @@ r_crimeless_proj = pd.DataFrame(r_crimeless_proj, columns=[f'PC{i}' for i in ran
 
 #Care home selection
 
-england_care_home_df = pd.read_csv('/home/mih_sud/code/willbanny/Location-Analysis/raw_data/carehome_locations (3).csv')
+england_care_home_df = pd.read_csv('raw_data/carehome_locations.csv')
 
 #Only store those that fit the golden df dimensions
 
@@ -235,4 +235,4 @@ export_df["Robust__Non_PCA_Crimeless_Labels"] = r_crimeless_non_pca_km.labels_
 
 
 #Change File_Path
-export_df.to_csv('/home/mih_sud/code/willbanny/Location-Analysis/raw_data/labels_export.csv')
+export_df.to_csv('outputs/model_output_labels.csv')
