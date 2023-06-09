@@ -162,7 +162,7 @@ def get_golden_df(district:str):
     query2 = f"""
             SELECT DISTINCT *
             FROM {GCP_PROJECT}.{BQ_DATASET}.{BQ_GOLDEN_TABLE}
-            WHERE {BQ_GOLDEN_TABLE}.District_ID = "{district_id}"
+            WHERE {BQ_GOLDEN_TABLE}.Local_Authority_District_code__2019_ = "{district_id}"
         """
 
     client = bigquery.Client(project=GCP_PROJECT)
