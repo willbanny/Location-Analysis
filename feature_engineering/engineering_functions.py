@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-import geopy.distance as GD
 from gbq_functions.big_query_download import *
 from sklearn.neighbors import BallTree
 from gbq_functions.big_query_download import *
@@ -72,7 +71,7 @@ district_list = ['Croydon London Boro',
 count_num_dis_to_bq = 0
 for district_string in district_list:
 
-    radius_list = [0, 250, 500, 750]
+    radius_list = [0, 100, 250, 500, 750, 1000, 1250, 1500]
 
     district_string = district_string
 
