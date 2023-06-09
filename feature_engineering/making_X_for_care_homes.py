@@ -117,7 +117,7 @@ for district_string in district_list:
     bt = BallTree(np.deg2rad(dep_df[['latitude', 'longitude']].values), metric='haversine')
 
     distances, indices = bt.query(np.deg2rad(grid_coords[['lat', 'lng']]))
-    print(f'distance: {distances}\nindices: {indices}')
+    # print(f'distance: {distances}\nindices: {indices}')
 
     dep_engineered = dep_df.iloc[indices[:, 0]]
     dep_engineered[['lng', 'lat']] = grid_coords[['lng', 'lat']].values
