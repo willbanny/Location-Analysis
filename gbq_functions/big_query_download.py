@@ -147,22 +147,55 @@ def upload_golden_df(district:str,
     print(f"✅ Merged {district} Data saved to bigquery, with shape {data.shape}")
 
 
-def get_golden_df(district:str):
+def get_golden_df(district:list):
     '''
     function that pulls the merged dataframe for data per district
     '''
-    query1 = f'''
-            SELECT District_ID
-            FROM {GCP_PROJECT}.{BQ_DATASET}.{BQ_DISTRICT_TABLE}
-            WHERE District = "{district}"'''
+    counter = 0
+    london_districts = []
+
+    if len(district) == 1:
+        full_string = f'''SELECT District_ID FROM {GCP_PROJECT}.{BQ_DATASET}.{BQ_DISTRICT_TABLE} WHERE District = "{district[0]}"'''
+    else:
+        base_string = f'''SELECT District_ID FROM {GCP_PROJECT}.{BQ_DATASET}.{BQ_DISTRICT_TABLE}'''
+        for dist in district:
+            if counter == 0:
+                query_string = f'''{base_string} WHERE District = "{dist}" OR'''
+
+                counter += 1
+                london_districts.append(query_string)
+            else:
+                query_string = f'''District = "{dist}" OR'''
+
+                counter += 1
+                london_districts.append(query_string)
+        full_string = ' '.join(london_districts)[:-3]
+
+    query1 = full_string
 
     district_id_df = bigquery.Client(project=GCP_PROJECT).query(query1).result().to_dataframe()
     district_id = district_id_df.iloc[0]['District_ID']
 
+
+    or_strings = []
+    counter = 0
+    for i, row in district_id_df.iterrows():
+        if counter == 0:
+            f_string_output = f'WHERE {BQ_GOLDEN_TABLE}.Local_Authority_District_code__2019_ = "{row["District_ID"]}" OR'
+            counter += 1
+            or_strings.append(f_string_output)
+        else:
+            f_string_output = f'{BQ_GOLDEN_TABLE}.Local_Authority_District_code__2019_ = "{row["District_ID"]}" OR'
+            counter += 1
+            or_strings.append(f_string_output)
+
+    full_or_string = ' '.join(or_strings)[:-3]
+
+
     query2 = f"""
             SELECT DISTINCT *
             FROM {GCP_PROJECT}.{BQ_DATASET}.{BQ_GOLDEN_TABLE}
-            WHERE {BQ_GOLDEN_TABLE}.Local_Authority_District_code__2019_ = "{district_id}"
+            {full_or_string}
         """
 
     client = bigquery.Client(project=GCP_PROJECT)
@@ -170,3 +203,5 @@ def get_golden_df(district:str):
     result = query_job.result()
     golden_df = result.to_dataframe()
     return golden_df
+
+

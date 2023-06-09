@@ -12,15 +12,56 @@ from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import OrdinalEncoder, MinMaxScaler, OneHotEncoder, RobustScaler
 from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
-from crime_features  import crime_features
-
+from crime_features import crime_features
+from gbq_functions.big_query_download import *
 
 
 # Feature Selection
 
 #Load Golden DF
-#Change FilePath
-local_golden_df = pd.read_csv("/home/mih_sud/code/willbanny/Location-Analysis/raw_data/London_Data_Expanded_1.csv")
+# input districts into list format
+
+district_list_input = ['Croydon London Boro',
+ 'Bromley London Boro',
+ 'Hounslow London Boro',
+ 'Ealing London Boro',
+ 'Havering London Boro',
+ 'Harrow London Boro',
+ 'Brent London Boro',
+ 'Barnet London Boro',
+ 'Lambeth London Boro',
+ 'Southwark London Boro',
+ 'Lewisham London Boro',
+ 'Greenwich London Boro',
+ 'Bexley London Boro',
+ 'Waltham Forest London Boro',
+ 'Redbridge London Boro',
+ 'Richmond upon Thames London Boro',
+ 'Merton London Boro',
+ 'Wandsworth London Boro',
+ 'Kensington and Chelsea London Boro',
+ 'City of Westminster London Boro',
+ 'Camden London Boro',
+ 'Tower Hamlets London Boro',
+ 'Islington London Boro',
+ 'Hackney London Boro',
+ 'Haringey London Boro',
+ 'Newham London Boro',
+ 'Barking and Dagenham London Boro',
+ 'City and County of the City of London',
+ 'Kingston upon Thames London Boro',
+ 'Enfield London Boro',
+ 'Sutton London Boro',
+ 'Hammersmith and Fulham London Boro',
+ 'Hillingdon London Boro']
+
+# then creating a list of query statements as part of a WHERE district_ID = XX OR district_ID = YY etc.
+
+
+
+# local_golden_df = pd.read_csv("/home/mih_sud/code/willbanny/Location-Analysis/raw_data/London_Data_Expanded_1.csv")
+local_golden_df = get_golden_df(district_list_input)
+
 
 # Preprocess and select features
 local_golden_df = local_golden_df.fillna(0)
