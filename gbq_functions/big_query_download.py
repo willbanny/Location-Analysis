@@ -282,3 +282,15 @@ def get_carehome_X_df(district:list):
     result = query_job.result()
     carehome_df = result.to_dataframe()
     return carehome_df
+
+def get_all_golden_df():
+    query2 = f"""
+        SELECT DISTINCT *
+        FROM {GCP_PROJECT}.{BQ_DATASET}.{BQ_GOLDEN_TABLE}
+    """
+
+    client = bigquery.Client(project=GCP_PROJECT)
+    query_job = client.query(query2)
+    result = query_job.result()
+    all_golden_df = result.to_dataframe()
+    return all_golden_df
