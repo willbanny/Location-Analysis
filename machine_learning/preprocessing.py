@@ -20,6 +20,7 @@ from crime_features  import crime_features
 
 #Load Golden DF
 #Change FilePath
+
 local_golden_df = pd.read_csv("/home/mih_sud/code/willbanny/Location-Analysis/raw_data/London_Data_Expanded_1.csv")
 
 # Preprocess and select features
@@ -72,7 +73,6 @@ r_scaled_df = pd.DataFrame(r_scaler.transform(to_scale_df), columns=city_feature
 
 
 #Crimeless selection
-
 crimeless_features = list(set(city_features) - set(crime_features))
 
 
