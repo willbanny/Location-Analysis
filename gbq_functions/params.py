@@ -10,6 +10,8 @@ BQ_GOOGLE_TABLE = os.environ.get("BQ_GOOGLE_TABLE")
 BQ_CRIME_TABLE = os.environ.get("BQ_CRIME_TABLE")
 BQ_DEP_TABLE = os.environ.get("BQ_DEP_TABLE")
 BQ_GOLDEN_TABLE = os.environ.get("BQ_GOLDEN_TABLE")
+BQ_CAREHOME_X_TABLE = os.environ.get("BQ_CAREHOME_X_TABLE")
+
 MASTER_COLUMN_NAMES_RAW = ["District",
     "HECTARES",
     "District_ID",
@@ -72,7 +74,8 @@ CRIME_DTYPES_RAW = {
     "District_Name": "object",
     "District_ID": "object"
 }
-DEP_COLUMN_NAMES_RAW = ["Local_Authority_District_code__2019_",
+DEP_COLUMN_NAMES_RAW = ['lsoa11cd',
+                        "Local_Authority_District_code__2019_",
     "Local_Authority_District_name__2019_",
     "Index_of_Multiple_Deprivation__IMD__Score",
     "Index_of_Multiple_Deprivation__IMD__Rank__where_1_is_most_deprived_",
